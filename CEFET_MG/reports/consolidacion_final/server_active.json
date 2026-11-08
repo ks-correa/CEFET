@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:8501",
+  "entrypoint": "app_final.py",
+  "health": "ok",
+  "decision": "E2",
+  "browser_errors": []
+}

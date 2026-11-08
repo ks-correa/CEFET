@@ -1,0 +1,135 @@
+[
+  {
+    "run": 1,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 2,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 3,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 4,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 5,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 6,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 7,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 8,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 9,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 10,
+    "window": "excitacion",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 1,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 2,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 3,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 4,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 5,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 6,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 7,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 8,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  },
+  {
+    "run": 9,
+    "window": "completa",
+    "original_choice": "E1",
+    "supplementary_choice": "D50",
+    "supplementary_text": "D50 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física."
+  }
+]

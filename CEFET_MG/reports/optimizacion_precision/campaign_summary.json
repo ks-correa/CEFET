@@ -1,0 +1,8 @@
+{
+  "total_models": 30,
+  "base_families": 16,
+  "principal_refits": 28,
+  "principal_exact": true,
+  "evaluation": "Desarrollo interno adaptativo; no validación externa",
+  "existing_results_preserved": true
+}

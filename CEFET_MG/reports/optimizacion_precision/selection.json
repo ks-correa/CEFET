@@ -1,0 +1,39 @@
+{
+  "predictive_lowest_worst_cv": "P_D_bomba_monotona__retardo",
+  "recommended": "P_D_bomba_monotona__retardo",
+  "parameters": {
+    "qstar": 1.156587217326905,
+    "r": 0.2541765664509371,
+    "b": 1.784410761998195,
+    "c": 0.21339468473199202
+  },
+  "delay": 2.0,
+  "tau": 0.0,
+  "scale_cm": [
+    5.984156401229839,
+    3.058273247855123
+  ],
+  "minima_primary": {
+    "h1": {
+      "model": "P_D_bomba_monotona__retardo",
+      "NRMSE": 0.14109480501212887
+    },
+    "h2": {
+      "model": "U_bomba_carga_monotona__actuador",
+      "NRMSE": 0.07678982985384473
+    }
+  },
+  "simultaneous_improvement_primary": false,
+  "simultaneous_improvement_cv": false,
+  "simultaneous_candidates": [
+    "U_bomba_carga_monotona__retardo",
+    "U_bomba_carga_monotona__actuador"
+  ],
+  "best_simultaneous": "U_bomba_carga_monotona__retardo",
+  "pareto_primary": [
+    "P_D_bomba_monotona__retardo",
+    "U_bomba_carga_monotona__retardo",
+    "U_bomba_carga_monotona__actuador"
+  ],
+  "criterion": "Peor NRMSE medio CV, preferir menos parámetros dentro de 1% relativo; balance condicional"
+}

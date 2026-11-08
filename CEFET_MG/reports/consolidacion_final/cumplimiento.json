@@ -1,0 +1,53 @@
+{
+  "tests_passed": 46,
+  "historical_files_unchanged": 707,
+  "checks": [
+    {
+      "item": "Integridad de datos y antecedentes",
+      "evidence": "Huellas SHA-256 de 707 archivos coinciden; pruebas históricas intactas."
+    },
+    {
+      "item": "Conservación de parámetros U",
+      "evidence": "Configuración exacta conservada; sin ejecutar calibración ni seleccionar nuevos parámetros."
+    },
+    {
+      "item": "Reproducción de validación",
+      "evidence": "Trayectorias de corridas 8–10 con diferencia máxima 0 cm frente a las predicciones archivadas."
+    },
+    {
+      "item": "Balances efectivos",
+      "evidence": "Pruebas existentes de intercambio compartido y balance total aprobadas; no certifican volumen físico absoluto."
+    },
+    {
+      "item": "Causalidad",
+      "evidence": "Retención causal, desfase y transformaciones comprobados; alterar entradas futuras no altera el prefijo."
+    },
+    {
+      "item": "Tres escenarios vigentes",
+      "evidence": "E0 observado, E1 atenuación, E2 constante; 19 comparaciones, mismos horizontes y condiciones. S_HIST separado."
+    },
+    {
+      "item": "Correspondencia aplicación/resultados",
+      "evidence": "AppTest nueve páginas; API HTTP; navegador: E2 coincide con RK4 y regla calculada. Servidor activo comprobado."
+    },
+    {
+      "item": "Consistencia documental",
+      "evidence": "Documentos vigentes recomiendan E2 nominal y declaran revisión retrospectiva. Índice marca informes E1 como históricos preservados."
+    },
+    {
+      "item": "Reproducibilidad",
+      "evidence": "Comparación reejecutada contra trayectorias e indicadores guardados; 46 pruebas aprobadas y tipos sin errores."
+    },
+    {
+      "item": "Guía docente",
+      "evidence": "Guía contrastada; exactamente 13 diapositivas con ocho campos y fuentes. Esquema preparado; PPT y sustentación pendientes."
+    }
+  ],
+  "active": {
+    "url": "http://127.0.0.1:8501",
+    "entrypoint": "app_final.py",
+    "health": "ok",
+    "decision": "E2",
+    "browser_errors": []
+  }
+}

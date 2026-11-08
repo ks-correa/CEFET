@@ -1,0 +1,6 @@
+{
+  "src\\constant_control_diagnostic.py": "83b9cdb7587bbd4f2fc6d6fd2e2bfd62b03f421e475b7b85dc254788d9b90025",
+  "src\\constant_control_reporting.py": "029ad3b25cbc97ca8a6bfbf89099f02fb6cb95a8a477766360d1afb3b8c48142",
+  "docs\\protocolo_diagnostico_constante.md": "b7a7d7fc7c0eda3eadfc3e0dbdd9df86e8355b8accf0aacb856298de83ded41f",
+  "tests\\test_constant_diagnostic.py": "9bd1a01c242b1b98ad9d462a750a401561bdf8841a1fab2926f782e87da7be9d"
+}

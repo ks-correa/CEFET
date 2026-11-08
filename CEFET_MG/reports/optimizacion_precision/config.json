@@ -1,0 +1,829 @@
+{
+  "seed": 20261108,
+  "starts": 4,
+  "step": 1.0,
+  "candidates": {
+    "E_lineal_raiz": {
+      "code": 0,
+      "names": [
+        "qstar",
+        "r",
+        "gamma"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0
+      ],
+      "hypothesis": "Transferencia proporcional al desnivel; salida gravitacional"
+    },
+    "F_exponentes": {
+      "code": 1,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "m",
+        "n"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.5,
+        0.5
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Leyes efectivas de cabeza con exponente entre laminar y raÃ­z"
+    },
+    "G_resistencia_mixta": {
+      "code": 2,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "lambda12"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "hypothesis": "PÃ©rdida de carga lineal mÃ¡s cuadrÃ¡tica en conexiÃ³n"
+    },
+    "H_doble_resistencia": {
+      "code": 3,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "lambda12",
+        "lambda_out"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Resistencias mixtas en conexiÃ³n y salida"
+    },
+    "I_bomba_monotona": {
+      "code": 4,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Transferencia lineal, salida raÃ­z, curva cÃºbica monÃ³tona"
+    },
+    "J_flexible_restringido": {
+      "code": 5,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c",
+        "m",
+        "n"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03,
+        0.5,
+        0.5
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Exponentes acotados y curva cÃºbica monÃ³tona"
+    },
+    "K_zona_muerta": {
+      "code": 6,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "deadzone_pct"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        1.0
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        15.0
+      ],
+      "hypothesis": "Zona muerta efectiva, no certificada; transferencia lineal"
+    },
+    "L_cabeza_efectiva": {
+      "code": 7,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "offset_cm"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.0
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        -10.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        10.0
+      ],
+      "hypothesis": "Desfase efectivo de cotas entre tanques; no geometrÃ­a identificada"
+    },
+    "M_cascada": {
+      "code": 8,
+      "names": [
+        "qstar",
+        "r",
+        "gamma"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0
+      ],
+      "hypothesis": "Descarga de T1 independiente de T2; cascada sin contrapresiÃ³n"
+    },
+    "O_bomba_saturante": {
+      "code": 9,
+      "names": [
+        "qstar",
+        "r",
+        "beta"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        3.0
+      ],
+      "hypothesis": "Bomba exponencial saturante, conexiÃ³n lineal"
+    },
+    "P_D_bomba_monotona": {
+      "code": 10,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Transferencia/salida raÃ­z como D, curva cÃºbica monÃ³tona"
+    }
+  },
+  "principal_train": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "principal_test": [
+    8,
+    9,
+    10
+  ],
+  "sigma": "unique source rows ddof=1, unchanged from stage1",
+  "status": "ExploraciÃ³n de desarrollo previamente examinada",
+  "extended_candidates": {
+    "E_lineal_raiz": {
+      "code": 0,
+      "names": [
+        "qstar",
+        "r",
+        "gamma"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0
+      ],
+      "hypothesis": "Transferencia proporcional al desnivel; salida gravitacional"
+    },
+    "F_exponentes": {
+      "code": 1,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "m",
+        "n"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.5,
+        0.5
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Leyes efectivas de cabeza con exponente entre laminar y raíz"
+    },
+    "G_resistencia_mixta": {
+      "code": 2,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "lambda12"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "hypothesis": "Pérdida de carga lineal más cuadrática en conexión"
+    },
+    "H_doble_resistencia": {
+      "code": 3,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "lambda12",
+        "lambda_out"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Resistencias mixtas en conexión y salida"
+    },
+    "I_bomba_monotona": {
+      "code": 4,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Transferencia lineal, salida raíz, curva cúbica monótona"
+    },
+    "J_flexible_restringido": {
+      "code": 5,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c",
+        "m",
+        "n"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5,
+        0.8,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03,
+        0.5,
+        0.5
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0,
+        1.0,
+        1.0
+      ],
+      "hypothesis": "Exponentes acotados y curva cúbica monótona"
+    },
+    "K_zona_muerta": {
+      "code": 6,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "deadzone_pct"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        1.0
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        0.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        15.0
+      ],
+      "hypothesis": "Zona muerta efectiva, no certificada; transferencia lineal"
+    },
+    "L_cabeza_efectiva": {
+      "code": 7,
+      "names": [
+        "qstar",
+        "r",
+        "gamma",
+        "offset_cm"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8,
+        0.0
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2,
+        -10.0
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0,
+        10.0
+      ],
+      "hypothesis": "Desfase efectivo de cotas entre tanques; no geometría identificada"
+    },
+    "M_cascada": {
+      "code": 8,
+      "names": [
+        "qstar",
+        "r",
+        "gamma"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        2.0
+      ],
+      "hypothesis": "Descarga de T1 independiente de T2; cascada sin contrapresión"
+    },
+    "O_bomba_saturante": {
+      "code": 9,
+      "names": [
+        "qstar",
+        "r",
+        "beta"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        3.0
+      ],
+      "hypothesis": "Bomba exponencial saturante, conexión lineal"
+    },
+    "P_D_bomba_monotona": {
+      "code": 10,
+      "names": [
+        "qstar",
+        "r",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.2,
+        0.3,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Transferencia/salida raíz como D, curva cúbica monótona"
+    },
+    "Q_balance_local": {
+      "code": 11,
+      "names": [
+        "qstar",
+        "r",
+        "k12",
+        "kout",
+        "gamma"
+      ],
+      "x": [
+        1.15,
+        0.3,
+        0.034,
+        0.014,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001,
+        0.001,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        0.2,
+        0.2,
+        2.0
+      ],
+      "hypothesis": "Conductancias locales positivas, transferencia por desnivel y salida linealizadas"
+    },
+    "R_balance_monotono": {
+      "code": 12,
+      "names": [
+        "qstar",
+        "r",
+        "k12",
+        "kout",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.15,
+        0.3,
+        0.034,
+        0.014,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001,
+        0.001,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        0.2,
+        0.2,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Balances con conductancias locales y bomba cúbica monótona"
+    },
+    "S_balance_empirico_C": {
+      "code": 13,
+      "names": [
+        "qstar",
+        "r",
+        "a",
+        "b",
+        "kout",
+        "gamma"
+      ],
+      "x": [
+        1.15,
+        0.3,
+        0.035,
+        0.031,
+        0.014,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001,
+        0.001,
+        0.001,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        0.2,
+        0.2,
+        0.2,
+        2.0
+      ],
+      "hypothesis": "Realización local conservativa de C con transferencia empírica no sólo función del desnivel"
+    },
+    "T_bomba_carga_local": {
+      "code": 14,
+      "names": [
+        "qstar",
+        "r",
+        "k12",
+        "kout",
+        "kpump",
+        "gamma"
+      ],
+      "x": [
+        1.15,
+        0.34,
+        0.031,
+        0.01,
+        0.004,
+        0.8
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001,
+        0.001,
+        0.0,
+        0.2
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        0.2,
+        0.2,
+        0.1,
+        2.0
+      ],
+      "hypothesis": "Balance local: bomba decreciente con carga h1 y transferencia por desnivel"
+    },
+    "U_bomba_carga_monotona": {
+      "code": 15,
+      "names": [
+        "qstar",
+        "r",
+        "k12",
+        "kout",
+        "kpump",
+        "b",
+        "c"
+      ],
+      "x": [
+        1.15,
+        0.34,
+        0.031,
+        0.01,
+        0.004,
+        0.7,
+        0.5
+      ],
+      "lo": [
+        0.01,
+        0.03,
+        0.001,
+        0.001,
+        0.0,
+        0.03,
+        0.03
+      ],
+      "hi": [
+        10.0,
+        3.0,
+        0.2,
+        0.2,
+        0.1,
+        20.0,
+        20.0
+      ],
+      "hypothesis": "Balance local: bomba cúbica monótona con corrección de carga h1"
+    }
+  }
+}

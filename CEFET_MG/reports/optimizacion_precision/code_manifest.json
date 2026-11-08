@@ -1,0 +1,21 @@
+{
+  "src\\calibration.py": "16bb7282893ef3c5889ef24bdcee6b07055e9eac0d509fb00cf8bce120d8108c",
+  "src\\data_processing.py": "613f0e44b05406e780612a685fde23a829588b803b557cc8a8d439834a49af8e",
+  "src\\experiments.py": "bfda97aa7f1b53391fdb5afa100582c3e8f16fe666699b6d2c751c85cf7ef55f",
+  "src\\goodness_of_fit.py": "375d53c4ff45b5350c52e4e92bd64ab531dc16f2f530191668b9d8c585060992",
+  "src\\models.py": "731bdae1ecf8e956fe7b624a098dccc41f3731b6bea9279898f9b61784bdd12e",
+  "src\\precision_diagnostics.py": "c0c495557da8fc9a4f5a2fab2e367da4aadea38bbc475848c68950e3d46090d5",
+  "src\\precision_extend.py": "87c161a9d3d26d5f4d7b0dc025b8b1fc4ce40f4b091e3f6f1d6aacf16889cbef",
+  "src\\precision_models.py": "110b658f2ecd940ffae9f345f5d32502b915455c6b0f3dd2d90186494e3f4677",
+  "src\\precision_reporting.py": "c591042350eab89e2e69be1de7409732de1e35e9b90fa21fcb9d6218896a9089",
+  "src\\precision_study.py": "d0af38f11fbc84aad209fee6c3f041e98133308a47302fc1e1330b77d96d997b",
+  "src\\reporting.py": "fc290e673c030670d513c7269aedefaaa5b926fe3c20f00f4738181e435b9192",
+  "src\\reproduce.py": "4787a3f5b1be90680e10d98c33c11306cd7c3a629253c8f48026029ddeaa3a3e",
+  "src\\rk4_solver.py": "392b4c049bac131c5665d62839d1180fcbf1945ed5b5757dfeba9e647aa56d62",
+  "src\\robustness.py": "b1472552de5aa8b754e973fd20432b0dca5bbac97bf3310d3b5b5b8504cfb1fb",
+  "src\\validation.py": "6e605cf5c27d8c038e30f8bd759e67d5d4e12a7b076d782f6233485dfd14d543",
+  "src\\__init__.py": "752f32632513b57cf8dfaf458b21aa6a382723b44ddca8b72893b3c203c342df",
+  "docs\\protocolo_optimizacion.md": "abb839cd17008e1101cd14fe4999d5a64615b5736bba82ae8aabccbbd6cc2806",
+  "tests\\test_precision.py": "5eb1217d173406f7f94bdbcfdb8dd9a751d67b75f711eaa342ecdd1e4849d76f",
+  "tests\\test_project.py": "b3a004c94e287c9b7ccf89e14799cadd022d0349eabaafa6196b174152e0c65f"
+}

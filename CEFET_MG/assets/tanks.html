@@ -1,0 +1,18 @@
+<section class="sim" aria-label="Reproducción de trayectoria RK4">
+ <header><div><span class="tag">SISTEMA ACOPLADO · RK4</span><h2 id="scene-title"></h2></div><div class="clock"><small>TIEMPO CALCULADO</small><strong id="clock">0.00 s</strong></div></header>
+ <svg viewBox="0 0 1100 390" role="img" aria-label="Dos tanques y sus flujos efectivos">
+  <defs><linearGradient id="water" x1="0" x2="1" y1="1" y2="0"><stop stop-color="#087c99"/><stop offset="1" stop-color="#52e2ce"/></linearGradient><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#51cfca"/></marker></defs>
+  <path d="M105 260 H205 V150 H250 M455 306 H670 M875 306 H1020" class="pipe" marker-end="url(#arrow)"/>
+  <circle cx="100" cy="260" r="35" class="pump"/><path d="M84 244 L118 260 L84 276 Z" fill="#60dfcf"/>
+  <text x="100" y="325" text-anchor="middle" class="caption">BOMBA</text><text id="input" x="100" y="351" text-anchor="middle" class="value"></text>
+  <g><rect x="250" y="80" width="205" height="250" rx="14" class="tank"/><rect id="water1" x="259" y="150" width="187" height="170" rx="6" fill="url(#water)"/>
+   <line id="ref1" x1="243" x2="463" stroke="#e7ffff" stroke-dasharray="5 6" opacity=".7"/><text x="352" y="43" text-anchor="middle" class="caption">TANQUE 01</text><text id="level1" x="352" y="67" text-anchor="middle" class="value"></text></g>
+  <g><rect x="670" y="80" width="205" height="250" rx="14" class="tank"/><rect id="water2" x="679" y="200" width="187" height="120" rx="6" fill="url(#water)"/>
+   <line id="ref2" x1="663" x2="883" stroke="#e7ffff" stroke-dasharray="5 6" opacity=".7"/><text x="772" y="43" text-anchor="middle" class="caption">TANQUE 02</text><text id="level2" x="772" y="67" text-anchor="middle" class="value"></text></g>
+  <text id="qin" x="165" y="116" text-anchor="middle" class="flux"></text><text id="q12" x="560" y="280" text-anchor="middle" class="flux"></text><text id="qout" x="990" y="280" text-anchor="middle" class="flux"></text>
+  <text x="352" y="359" text-anchor="middle" class="caption">REFERENCIA 47,4 cm</text><text x="772" y="359" text-anchor="middle" class="caption">REFERENCIA 31,2 cm</text>
+ </svg>
+ <svg viewBox="0 0 1040 64" class="trace" role="img" aria-label="Trayectorias y cursor del instante visualizado"><path id="trace1" fill="none" stroke="#57dfce" stroke-width="2"/><path id="trace2" fill="none" stroke="#7da8ff" stroke-width="2"/><line id="cursor" y1="1" y2="63" stroke="white" stroke-width="2"/></svg>
+ <div class="controls"><button id="play">Iniciar</button><button id="pause">Pausar</button><button id="reset">Reiniciar</button><label>Velocidad <select id="speed"><option>1</option><option>10</option><option selected>20</option><option>40</option><option>80</option></select> ×</label><input id="seek" aria-label="Instante de reproducción" type="range" min="0" step="1" value="0"/></div>
+ <footer>Esquema conceptual · alturas normalizadas para visualización, sin capacidad en litros · flujos efectivos Q/A₁ en cm/s · líneas discontinuas: referencias · curva turquesa: h1; azul: h2</footer>
+</section>

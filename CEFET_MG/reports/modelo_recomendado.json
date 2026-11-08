@@ -1,0 +1,14 @@
+{
+  "model": "D_conservativo",
+  "parameters": {
+    "s": 0.29353581360305214,
+    "r": 0.2885569486144346,
+    "gamma": 0.7158730604149216
+  },
+  "scale_cm": [
+    5.984156401229839,
+    3.058273247855123
+  ],
+  "criterion": "Menor número de parámetros entre modelos que cumplen por corrida completa y excitación principal/CV",
+  "caveat": "Topología hipotética; evaluación interna; no válido para arranque"
+}

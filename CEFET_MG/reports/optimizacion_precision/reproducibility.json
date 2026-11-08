@@ -1,0 +1,142 @@
+[
+  {
+    "model": "E_lineal_raiz",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "F_exponentes",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "G_resistencia_mixta",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "H_doble_resistencia",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "I_bomba_monotona",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "J_flexible_restringido",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "K_zona_muerta",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "L_cabeza_efectiva",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "M_cascada",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "O_bomba_saturante",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "P_D_bomba_monotona",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "P_D_bomba_monotona__minimax",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "P_D_bomba_monotona__regularizado",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "J_flexible_restringido__minimax",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "J_flexible_restringido__regularizado",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "P_D_bomba_monotona__retardo",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "P_D_bomba_monotona__actuador",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "Q_balance_local",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "R_balance_monotono",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "S_balance_empirico_C",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "T_bomba_carga_local",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "U_bomba_carga_monotona",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "U_bomba_carga_monotona__minimax",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "U_bomba_carga_monotona__regularizado",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "S_balance_empirico_C__minimax",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "S_balance_empirico_C__regularizado",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "U_bomba_carga_monotona__retardo",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  },
+  {
+    "model": "U_bomba_carga_monotona__actuador",
+    "max_parameter_difference": 0.0,
+    "exact": true
+  }
+]

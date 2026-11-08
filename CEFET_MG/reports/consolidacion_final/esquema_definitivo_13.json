@@ -1,0 +1,198 @@
+[
+  {
+    "n": 1,
+    "title": "Portada",
+    "objective": "Identificar el trabajo, autores y alcance.",
+    "content": "Título propuesto: Modelado local y simulación de dos tanques CEFET-MG. Asignatura Modelado y Simulación. Integrantes y fecha de sustentación por completar.",
+    "evidence": "Título tipográfico, sin fotografía ficticia ni resultados decorativos.",
+    "source": [
+      "docs/anexos_proyecto.md",
+      "referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx"
+    ],
+    "limitations": "Faltan nombres de los dos integrantes y fecha de sustentación. No inventarlos.",
+    "verifiable_data": "Título del proyecto y asignatura documentados. Nombres de integrantes y fecha de sustentación pendientes.",
+    "oral_explanation": "Presentamos un trabajo de modelado con registros publicados de un montaje real. Las mediciones pertenecen a los investigadores y nuestro aporte es su análisis y simulación."
+  },
+  {
+    "n": 2,
+    "title": "Problema y pregunta de decisión",
+    "objective": "Vincular variabilidad de bombeo, desviaciones locales y decisión nominal.",
+    "content": "¿Cómo influye la variabilidad de la señal de bombeo en la estabilidad de los niveles de dos tanques hidráulicos interconectados y qué condición de operación permite minimizar sus desviaciones respecto al equilibrio nominal? Se limita a alternativas evaluadas cerca del equilibrio, sin demanda externa documentada.",
+    "evidence": "Breve contraste entre entrada de identificación y operación nominal. La revisión se sustenta en el diagnóstico D50.",
+    "source": [
+      "docs/consolidacion_final/definicion_problema.md",
+      "data/raw/README.md"
+    ],
+    "limitations": "No hay demanda externa ni consigna móvil documentada. Una restricción que excluya D50 sería una hipótesis nueva.",
+    "verifiable_data": "Referencias nominales 47.4/31.2 cm y 50%. Sin demanda externa documentada.",
+    "oral_explanation": "Comparamos la respuesta de los niveles ante distinta variabilidad de mando. La decisión vale para el régimen nominal estudiado y para este conjunto de alternativas."
+  },
+  {
+    "n": 3,
+    "title": "Esquema del sistema",
+    "objective": "Explicar estados, frontera del modelo y conexión supuesta.",
+    "content": "Dos niveles h1/h2, bomba y flujos efectivos qin/q12/qout. La misma transferencia sale del primer balance y entra al segundo. Áreas absolutas y circuito preciso no identificados.",
+    "evidence": "Recorte de la escena vigente de los dos tanques, sin presentarla como plano ni fotografía.",
+    "source": [
+      "reports/consolidacion_final/figures/aplicacion_vigente.png",
+      "src/simulation_engine.py",
+      "docs/consolidacion_final/modelo_y_variables.md"
+    ],
+    "limitations": "No presentar alturas de conexiones, áreas o tuberías del dibujo como geometría medida.",
+    "verifiable_data": "Dos estados y tres flujos efectivos. El dibujo representa el modelo, no la geometría certificada.",
+    "oral_explanation": "La transferencia aparece con signos opuestos en ambos balances. El esquema explica el modelo; no contiene áreas ni conexiones medidas por nosotros."
+  },
+  {
+    "n": 4,
+    "title": "Datos reales",
+    "objective": "Demostrar origen experimental y trazabilidad sin atribuir mediciones a los estudiantes.",
+    "content": "Dataset de Silva, Coelho y Leite, CEFET-MG. 4502 registros en captura completa, niveles cm, bomba %, muestreo ≈4 s. Diez extractos cortos son partes de la captura larga. La señal se repite. Uso externo autorizado según comunicación del usuario.",
+    "evidence": "Gráfica exploratoria de captura completa y tabla pequeña de archivos/variables. Cuantización aparente ≈0.453 cm por código.",
+    "source": [
+      "reports/figures/exploracion.png",
+      "reports/auditoria_dataset.md",
+      "data/raw/README.md",
+      "docs/anexos_proyecto.md"
+    ],
+    "limitations": "Instrumento específico, fecha exacta de adquisición y fotografías verificadas no disponibles. Autorización comunicada, sin acta adjunta. No equiparar cuantización con exactitud certificada.",
+    "verifiable_data": "4502 filas en captura larga; muestreo ≈4 s; diez repeticiones; unidades cm y %; cuantización aparente ≈0.453 cm.",
+    "oral_explanation": "Los datos tienen trazabilidad y unidades documentadas. Las diez corridas cortas son partes de la captura larga y repiten una señal, por lo que no duplicamos observaciones."
+  },
+  {
+    "n": 5,
+    "title": "Variables, parámetros y unidades",
+    "objective": "Fijar unidades y distinguir coeficientes efectivos de geometría real.",
+    "content": "h1/h2 cm, t s, u %, referencias 47.4/31.2 cm y 50%. Siete parámetros globales de U y desfase efectivo 2 s. q=Q/A1 en cm/s, r=A1/A2. Condición inicial del primer registro, una sola vez.",
+    "evidence": "Tabla de parametros_U.csv con valores exactos; redondeo sólo visual indicando que se ejecutan los valores completos.",
+    "source": [
+      "reports/consolidacion_final/parametros_U_vigentes.csv",
+      "docs/consolidacion_final/anexos_A_B_C.md"
+    ],
+    "limitations": "No convertir a litros/s ni deducir áreas a partir de capacidad nominal. Los 2 s no son retardo físico certificado.",
+    "verifiable_data": "Siete parámetros de U, sin ajuste nuevo; desfase efectivo 2 s; tabla con valores completos.",
+    "oral_explanation": "Estos valores efectivos se cargan completos del archivo calibrado. No conocemos áreas para convertirlos a litros por segundo."
+  },
+  {
+    "n": 6,
+    "title": "Modelo matemático",
+    "objective": "Mostrar una EDO por tanque y sus hipótesis locales.",
+    "content": "dh1/dt=qin−q12; dh2/dt=r(q12−qout). q12 y qout son conductancias locales con caudales no negativos. qin usa curva cúbica monótona y corrección por h1. Señal causal u(t−2). Identidad efectiva d(h1+h2/r)/dt=qin−qout.",
+    "evidence": "Ecuaciones exactas de U código 15, con definición F(z)=z+(b−1)z²+(1−2b+c)z³/3, sin sustituirlas por una raíz de Torricelli global.",
+    "source": [
+      "src/precision_models.py",
+      "docs/consolidacion_final/modelo_y_variables.md"
+    ],
+    "limitations": "Balance matemático local, sin conservación volumétrica global certificada ni interpretación física única del circuito.",
+    "verifiable_data": "Dos EDO y las expresiones exactas de qin, q12, qout y F(z), código 15.",
+    "oral_explanation": "U describe balances locales. La bomba tiene curva monótona y dependencia efectiva de la altura; no estamos afirmando una curva física certificada del equipo."
+  },
+  {
+    "n": 7,
+    "title": "Implementación",
+    "objective": "Explicar que el motor y la animación usan una sola trayectoria.",
+    "content": "Python y RK4 simultáneo, paso máximo 1 s, eventos de entrada particionados y mando previo 50%. La animación reproduce estados calculados. Comprobaciones de finitud, no negatividad, causalidad y comparación DOP853.",
+    "evidence": "Captura del simulador y tabla numérica de verificación. D50 difiere de DOP853 ≈10⁻⁶ cm en las corridas comprobadas.",
+    "source": [
+      "src/simulation_engine.py",
+      "reports/consolidacion_final/browser_checks.json",
+      "docs/consolidacion_final/rk4_calibracion_validacion.md"
+    ],
+    "limitations": "La velocidad de reproducción visual no cambia la integración. No hay mediciones en vivo ni un segundo motor de animación.",
+    "verifiable_data": "RK4 máximo 1 s, eventos causales; tanques comparados con estados calculados; pruebas en navegador.",
+    "oral_explanation": "RK4 integra ambos estados juntos y cambia la entrada sólo cuando corresponde. La animación reproduce esa trayectoria y su velocidad no cambia las ecuaciones."
+  },
+  {
+    "n": 8,
+    "title": "Calibración",
+    "objective": "Documentar cómo se obtuvieron los parámetros sin reajustar para escenarios.",
+    "content": "Mínimos cuadrados normalizados conjuntos, multinicio reproducible, escalas de entrenamiento por filas únicas. Ajuste principal corridas 1–7 completas. U conserva siete coeficientes; el perfil de desfase usa 2 s. La exploración de 30 variantes usó datos ya examinados.",
+    "evidence": "Tabla reducida de parámetros finales y esquema de particiones 1–7 / 8–10. No mostrar una nueva calibración para D50 ni para la ablación de media.",
+    "source": [
+      "src/precision_study.py",
+      "docs/protocolo_optimizacion.md",
+      "reports/optimizacion_precision/fit_U_bomba_carga_monotona__retardo.json",
+      "reports/optimizacion_precision/campaign_summary.json"
+    ],
+    "limitations": "Elegir entre 30 variantes reduce independencia de la evaluación. El offset de mando de la ablación no es un nuevo parámetro calibrado de U.",
+    "verifiable_data": "Entrenamiento principal 1–7; evaluación interna 8–10; cuatro inicializaciones; 30 variantes exploradas.",
+    "oral_explanation": "Los coeficientes se estimaron con desarrollo y se conservaron. La exploración previa de variantes obliga a llamar interna a la evaluación."
+  },
+  {
+    "n": 9,
+    "title": "Validación",
+    "objective": "Cuantificar reproducción de datos y declarar su calidad de evidencia.",
+    "content": "Evaluación interna previamente examinada. U: RMSE h1≈0.87253 cm, h2≈0.24169 cm; NRMSE≈0.14581/0.07903; MAE según tabla reproducida. NRMSE divide por sigma de entrenamiento. Promedios por corrida 8–10 en horizontes disponibles, no RMSE agrupado. CV por grupos y residuos autocorrelacionados.",
+    "evidence": "Trayectorias observadas frente a U en corridas 8–10 y tabla breve de métricas; ACF como apoyo o evidencia enlazada.",
+    "source": [
+      "reports/consolidacion_final/validacion_U_sin_cambios.csv",
+      "reports/optimizacion_precision/figures/trajectories_U_bomba_carga_monotona__retardo.png",
+      "reports/optimizacion_precision/residual_diagnostics.json"
+    ],
+    "limitations": "No es validación externa. NRMSE no es porcentaje del nivel. La corrida 10 no tiene recuperación; no afirmar precisión en arranque o señales nuevas.",
+    "verifiable_data": "RMSE predictivo U: 0.87253/0.24169 cm; NRMSE: 0.14581/0.07903; MAE: 0.62896/0.18748 cm, medias por corrida.",
+    "oral_explanation": "Aquí medimos error contra observaciones reales. Estos RMSE son distintos de las desviaciones respecto al objetivo que aparecerán al comparar escenarios."
+  },
+  {
+    "n": 10,
+    "title": "Escenarios",
+    "objective": "Explicar exactamente los tres escenarios vigentes y sus condiciones comunes.",
+    "content": "E0 mando experimental; E1=50+0.8(u0−50); E2=50% constante. Mismos U, h0, tiempos, parámetros, paso y referencias. El antiguo suavizado queda como S_HIST complementario. Revisión posterior al diagnóstico.",
+    "evidence": "Señales escalonadas de la comparación vigente y mapa de versiones.",
+    "source": [
+      "docs/consolidacion_final/protocolo_vigente.md",
+      "src/final_scenarios.py",
+      "reports/consolidacion_final/figures/escenarios_vigentes.png"
+    ],
+    "limitations": "No fue la selección previa original. E1/E2 no tienen mediciones contrafactuales y la entrada de identificación tiene otra finalidad.",
+    "verifiable_data": "Tres escenarios principales, 10 excitaciones (~800 s) y 9 corridas con recuperación (~1700 s).",
+    "oral_explanation": "La revisión incorpora el mando constante como E2. La antigua señal suavizada sigue disponible como complemento; declaramos que cambiamos el conjunto después del diagnóstico."
+  },
+  {
+    "n": 11,
+    "title": "Resultados y comparación",
+    "objective": "Comparar tres escenarios con números calculados y dos tipos de error separados.",
+    "content": "RMSE de regulación y mando medio/TV: E0≈9.10264/5.00727 cm; E1≈7.01683/3.77536; E2≈0.19707/0.19702 en corrida 8, ≈800 s. La tabla predictiva de U permanece aparte. Resumen sobre diez excitaciones y nueve recuperaciones.",
+    "evidence": "Tabla breve de tres filas y gráfica vigente. Señalar que el índice relativo de esfuerzo de E2 es cero, sin inferir energía eléctrica.",
+    "source": [
+      "reports/consolidacion_final/comparacion_principal.csv",
+      "reports/consolidacion_final/resumen_excitaciones.csv",
+      "reports/consolidacion_final/figures/escenarios_vigentes.png"
+    ],
+    "limitations": "No comparar estos RMSE contra el objetivo con RMSE de predicción contra mediciones. No inferir ahorro eléctrico ni seguridad.",
+    "verifiable_data": "Corrida 8: E2 mando medio 50%, TV=0, RMSE de regulación ≈0.19707/0.19702 cm; revisar tabla fuente exacta.",
+    "oral_explanation": "La constante reduce las desviaciones nominales porque evita excitar el equilibrio. Que su índice relativo de esfuerzo sea cero no significa que la bomba no consuma."
+  },
+  {
+    "n": 12,
+    "title": "Decisión, limitaciones y conclusiones",
+    "objective": "Defender E2 nominalmente y acotar la sensibilidad simulada.",
+    "content": "E2 es la mejor alternativa nominal evaluada: 19/19 comparaciones. Se mantiene en 90 sensibilidades exploratorias. El equilibrio está incorporado a U y h0 es próximo. Sesgo sostenido desplaza el equilibrio; no hay prueba de rechazo de perturbaciones reales.",
+    "evidence": "Conteo de decisiones, figura de sensibilidad y predicción del equilibrio a 48%.",
+    "source": [
+      "reports/consolidacion_final/decisiones_vigentes.json",
+      "reports/consolidacion_final/robustez/decisiones.json",
+      "reports/consolidacion_final/figures/sensibilidad_E2.png",
+      "docs/consolidacion_final/solidez_y_limitaciones.md"
+    ],
+    "limitations": "Sin óptimo global, política física ensayada, generalización externa, ahorro de energía ni robustez experimental. Informar excursiones de E0/E1 fuera del rectángulo medido.",
+    "verifiable_data": "19 decisiones nominales E2; 90 exploratorias E2; equilibrio calculado a 48%≈(44.056,28.624) cm.",
+    "oral_explanation": "La recomendación es E2 bajo estas condiciones. Las pruebas pequeñas no prueban rechazo de perturbaciones, y un sesgo sostenido desplaza los niveles calculados."
+  },
+  {
+    "n": 13,
+    "title": "Referencias y evidencias",
+    "objective": "Permitir comprobar origen, cálculos y límites sin inventar anexos.",
+    "content": "Zenodo DOI 10.5281/zenodo.19856119; Silva, Coelho y Leite. README experimental y guía docente. Código, parámetros, huellas, informes y pruebas. Diferenciar autorización comunicada de un acta adjunta inexistente.",
+    "evidence": "Bibliografía breve y rutas reproducibles del proyecto. Referencias enlazadas a los datos y comandos de reproducción.",
+    "source": [
+      "https://doi.org/10.5281/zenodo.19856119",
+      "data/raw/README.md",
+      "referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx",
+      "reports/consolidacion_final/integridad.json",
+      "docs/consolidacion_final/registro_metodologico.md"
+    ],
+    "limitations": "No hay fotos propias, repositorio remoto informado ni texto completo verificado de los artículos asociados. No atribuir esas evidencias a la pareja.",
+    "verifiable_data": "DOI 10.5281/zenodo.19856119, autores Silva/Coelho/Leite; huellas de archivos y rutas de reproducción.",
+    "oral_explanation": "Las fuentes permiten revisar cada cifra. Conservamos originales, resultados históricos, código y pruebas sin inventar fotografías ni mediciones propias."
+  }
+]

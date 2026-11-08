@@ -1,0 +1,134 @@
+{
+  "complete_data": {
+    "shape": [
+      4502,
+      4
+    ],
+    "columns": [
+      "t",
+      "h1",
+      "h2",
+      "u"
+    ],
+    "types": {
+      "t": "float64",
+      "h1": "float64",
+      "h2": "float64",
+      "u": "float64"
+    },
+    "missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_times": 0,
+    "dt_min": 3.8519241809845,
+    "dt_max": 4.001682996798991,
+    "time_reversals": 0,
+    "gaps_gt6": 0
+  },
+  "h1": {
+    "shape": [
+      81,
+      11
+    ],
+    "columns": [
+      "t_ref",
+      "Experimento1",
+      "Experimento2",
+      "Experimento3",
+      "Experimento4",
+      "Experimento5",
+      "Experimento6",
+      "Experimento7",
+      "Experimento8",
+      "Experimento9",
+      "Experimento10"
+    ],
+    "types": {
+      "t_ref": "float64",
+      "Experimento1": "float64",
+      "Experimento2": "float64",
+      "Experimento3": "float64",
+      "Experimento4": "float64",
+      "Experimento5": "float64",
+      "Experimento6": "float64",
+      "Experimento7": "float64",
+      "Experimento8": "float64",
+      "Experimento9": "float64",
+      "Experimento10": "float64"
+    },
+    "missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_times": 0,
+    "dt_min": 3.9986290931699955,
+    "dt_max": 4.001535177230899,
+    "time_reversals": 0,
+    "gaps_gt6": 0
+  },
+  "h2": {
+    "shape": [
+      81,
+      11
+    ],
+    "columns": [
+      "t_ref",
+      "Experimento1",
+      "Experimento2",
+      "Experimento3",
+      "Experimento4",
+      "Experimento5",
+      "Experimento6",
+      "Experimento7",
+      "Experimento8",
+      "Experimento9",
+      "Experimento10"
+    ],
+    "types": {
+      "t_ref": "float64",
+      "Experimento1": "float64",
+      "Experimento2": "float64",
+      "Experimento3": "float64",
+      "Experimento4": "float64",
+      "Experimento5": "float64",
+      "Experimento6": "float64",
+      "Experimento7": "float64",
+      "Experimento8": "float64",
+      "Experimento9": "float64",
+      "Experimento10": "float64"
+    },
+    "missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_times": 0,
+    "dt_min": 3.9986290931699955,
+    "dt_max": 4.001535177230899,
+    "time_reversals": 0,
+    "gaps_gt6": 0
+  },
+  "U": {
+    "shape": [
+      80,
+      2
+    ],
+    "columns": [
+      "t_ref",
+      "U"
+    ],
+    "types": {
+      "t_ref": "float64",
+      "U": "float64"
+    },
+    "missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_times": 0,
+    "dt_min": 3.9986290931699955,
+    "dt_max": 4.001535177230899,
+    "time_reversals": 0,
+    "gaps_gt6": 0
+  },
+  "quantization_cm": {
+    "h1": 0.4528882201599984,
+    "h2": 0.4537391577599976
+  },
+  "repetition_std_cm": {
+    "h1": 0.21265934510942266,
+    "h2": 0.13756058976839186
+  }
+}

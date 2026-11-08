@@ -1,0 +1,116 @@
+[
+  {
+    "run": 1,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 2,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 3,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 4,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 5,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 6,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 7,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 8,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 9,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 10,
+    "window": "excitacion",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 1,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 2,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 3,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 4,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 5,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 6,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 7,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 8,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  },
+  {
+    "run": 9,
+    "window": "completa",
+    "recommended": "E2",
+    "text": "E2 cumple la regla local: no empeora los RMSE de regulación, mejora al menos uno ≥5%, no aumenta TV del mando y cambia su media ≤5 pp. No equivale a dominancia en todos los indicadores ni a prueba física. Revisión de escenarios posterior al diagnóstico; la regla no se modificó. Es la mejor alternativa nominal evaluada cerca del equilibrio, sin demandas externas documentadas; no implica óptimo global, ahorro eléctrico ni ensayo físico."
+  }
+]

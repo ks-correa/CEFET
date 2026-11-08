@@ -1,0 +1,36 @@
+{
+  "jacobian": [
+    [
+      -0.04302848107664396,
+      0.03976624705046648
+    ],
+    [
+      0.011161865991398174,
+      -0.014490001259470876
+    ]
+  ],
+  "eigenvalues": [
+    [
+      -0.054204805184737,
+      0.0
+    ],
+    [
+      -0.0033136771513778366,
+      0.0
+    ]
+  ],
+  "nominal_equilibrium": [
+    47.4,
+    31.2
+  ],
+  "constant_48_equilibrium": [
+    44.05602228814111,
+    28.624083653988986
+  ],
+  "equilibrium_48_residual": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "caveat": "Predicci\u00f3n local bajo sesgo de mando; no prueba de rechazo de perturbaciones f\u00edsicas"
+}

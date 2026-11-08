@@ -1,0 +1,8 @@
+símbolo,valor,unidad,fuente
+qstar,1.1901768213433377,cm/s (Q/A1),all_fits.json → U → principal
+r,0.28068693475733053,adimensional (A1/A2),all_fits.json → U → principal
+k12,0.039766247050466483,s⁻¹,all_fits.json → U → principal
+kout,0.011857107887654482,s⁻¹,all_fits.json → U → principal
+kpump,0.0032622340261774787,s⁻¹,all_fits.json → U → principal
+b,0.71741375825579845,adimensional,all_fits.json → U → principal
+c,0.58172099393448107,adimensional,all_fits.json → U → principal

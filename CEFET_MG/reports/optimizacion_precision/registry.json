@@ -1,0 +1,234 @@
+{
+  "E_lineal_raiz": {
+    "base": "E_lineal_raiz",
+    "objective": "ls",
+    "profiles": null
+  },
+  "F_exponentes": {
+    "base": "F_exponentes",
+    "objective": "ls",
+    "profiles": null
+  },
+  "G_resistencia_mixta": {
+    "base": "G_resistencia_mixta",
+    "objective": "ls",
+    "profiles": null
+  },
+  "H_doble_resistencia": {
+    "base": "H_doble_resistencia",
+    "objective": "ls",
+    "profiles": null
+  },
+  "I_bomba_monotona": {
+    "base": "I_bomba_monotona",
+    "objective": "ls",
+    "profiles": null
+  },
+  "J_flexible_restringido": {
+    "base": "J_flexible_restringido",
+    "objective": "ls",
+    "profiles": null
+  },
+  "K_zona_muerta": {
+    "base": "K_zona_muerta",
+    "objective": "ls",
+    "profiles": null
+  },
+  "L_cabeza_efectiva": {
+    "base": "L_cabeza_efectiva",
+    "objective": "ls",
+    "profiles": null
+  },
+  "M_cascada": {
+    "base": "M_cascada",
+    "objective": "ls",
+    "profiles": null
+  },
+  "O_bomba_saturante": {
+    "base": "O_bomba_saturante",
+    "objective": "ls",
+    "profiles": null
+  },
+  "P_D_bomba_monotona": {
+    "base": "P_D_bomba_monotona",
+    "objective": "ls",
+    "profiles": null
+  },
+  "P_D_bomba_monotona__minimax": {
+    "base": "P_D_bomba_monotona",
+    "objective": "minimax",
+    "profiles": null
+  },
+  "P_D_bomba_monotona__regularizado": {
+    "base": "P_D_bomba_monotona",
+    "objective": "regularizado",
+    "profiles": null
+  },
+  "J_flexible_restringido__minimax": {
+    "base": "J_flexible_restringido",
+    "objective": "minimax",
+    "profiles": null
+  },
+  "J_flexible_restringido__regularizado": {
+    "base": "J_flexible_restringido",
+    "objective": "regularizado",
+    "profiles": null
+  },
+  "P_D_bomba_monotona__retardo": {
+    "base": "P_D_bomba_monotona",
+    "objective": "ls",
+    "profiles": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        8.0,
+        0.0
+      ]
+    ]
+  },
+  "P_D_bomba_monotona__actuador": {
+    "base": "P_D_bomba_monotona",
+    "objective": "ls",
+    "profiles": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        0.0,
+        8.0
+      ]
+    ]
+  },
+  "Q_balance_local": {
+    "base": "Q_balance_local",
+    "objective": "ls",
+    "profiles": null
+  },
+  "R_balance_monotono": {
+    "base": "R_balance_monotono",
+    "objective": "ls",
+    "profiles": null
+  },
+  "S_balance_empirico_C": {
+    "base": "S_balance_empirico_C",
+    "objective": "ls",
+    "profiles": null
+  },
+  "T_bomba_carga_local": {
+    "base": "T_bomba_carga_local",
+    "objective": "ls",
+    "profiles": null
+  },
+  "U_bomba_carga_monotona": {
+    "base": "U_bomba_carga_monotona",
+    "objective": "ls",
+    "profiles": null
+  },
+  "U_bomba_carga_monotona__minimax": {
+    "base": "U_bomba_carga_monotona",
+    "objective": "minimax",
+    "profiles": null
+  },
+  "U_bomba_carga_monotona__regularizado": {
+    "base": "U_bomba_carga_monotona",
+    "objective": "regularizado",
+    "profiles": null
+  },
+  "S_balance_empirico_C__minimax": {
+    "base": "S_balance_empirico_C",
+    "objective": "minimax",
+    "profiles": null
+  },
+  "S_balance_empirico_C__regularizado": {
+    "base": "S_balance_empirico_C",
+    "objective": "regularizado",
+    "profiles": null
+  },
+  "U_bomba_carga_monotona__retardo": {
+    "base": "U_bomba_carga_monotona",
+    "objective": "ls",
+    "profiles": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        8.0,
+        0.0
+      ]
+    ]
+  },
+  "U_bomba_carga_monotona__actuador": {
+    "base": "U_bomba_carga_monotona",
+    "objective": "ls",
+    "profiles": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        4.0
+      ],
+      [
+        0.0,
+        8.0
+      ]
+    ]
+  }
+}

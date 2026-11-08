@@ -1,0 +1,33 @@
+{
+  "unchanged": true,
+  "changed": [],
+  "files_compared": 707,
+  "reproducibility": [
+    {
+      "run": 8,
+      "exact": true
+    },
+    {
+      "run": 9,
+      "exact": true
+    },
+    {
+      "run": 10,
+      "exact": true
+    }
+  ],
+  "DOP853": [
+    {
+      "run": 8,
+      "max_difference_cm": 1.0120828619619715e-06
+    },
+    {
+      "run": 9,
+      "max_difference_cm": 1.0120852138584269e-06
+    },
+    {
+      "run": 10,
+      "max_difference_cm": 5.871924244615911e-07
+    }
+  ]
+}

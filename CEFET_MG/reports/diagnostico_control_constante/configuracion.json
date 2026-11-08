@@ -1,0 +1,52 @@
+{
+  "model": "U_bomba_carga_monotona__retardo",
+  "parameters": {
+    "qstar": 1.1901768213433377,
+    "r": 0.28068693475733053,
+    "k12": 0.03976624705046648,
+    "kout": 0.011857107887654482,
+    "kpump": 0.0032622340261774787,
+    "b": 0.7174137582557985,
+    "c": 0.5817209939344811
+  },
+  "delay_s": 2.0,
+  "step_s": 1.0,
+  "offsets": {
+    "excitacion": {
+      "offset_pp": -1.0721835494258452,
+      "development_runs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target_mean_pct": 48.99824308719293,
+      "training_mean_mismatch_pp": 0.0
+    },
+    "completa": {
+      "offset_pp": -0.5032182290330212,
+      "development_runs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target_mean_pct": 49.52858492676888,
+      "training_mean_mismatch_pp": -7.105427357601002e-15
+    }
+  },
+  "python": "3.14.3 (main, Mar  3 2026, 15:00:44) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "matplotlib": "3.11.2"
+  }
+}

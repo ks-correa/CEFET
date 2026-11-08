@@ -1,0 +1,18 @@
+{
+  "U_bomba_carga_monotona": 0.16118841627593217,
+  "S_balance_empirico_C": 0.16184567220223509,
+  "T_bomba_carga_local": 0.16184567584136828,
+  "P_D_bomba_monotona": 0.16356635353277063,
+  "J_flexible_restringido": 0.16410728314995585,
+  "Q_balance_local": 0.1683615782994489,
+  "R_balance_monotono": 0.16880915305943867,
+  "L_cabeza_efectiva": 0.23990882872234803,
+  "G_resistencia_mixta": 0.2470858494793935,
+  "F_exponentes": 0.24708589918664567,
+  "H_doble_resistencia": 0.24708604408038867,
+  "K_zona_muerta": 0.2513805564697046,
+  "I_bomba_monotona": 0.2821869735769485,
+  "O_bomba_saturante": 0.3188485289153752,
+  "E_lineal_raiz": 0.3545818121171288,
+  "M_cascada": 0.3996514363500998
+}

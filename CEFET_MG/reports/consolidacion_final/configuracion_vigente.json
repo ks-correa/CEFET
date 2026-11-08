@@ -1,0 +1,29 @@
+{
+  "model": "U_bomba_carga_monotona__retardo",
+  "parameters": {
+    "qstar": 1.1901768213433377,
+    "r": 0.28068693475733053,
+    "k12": 0.03976624705046648,
+    "kout": 0.011857107887654482,
+    "kpump": 0.0032622340261774787,
+    "b": 0.7174137582557985,
+    "c": 0.5817209939344811
+  },
+  "step_s": 1.0,
+  "delay_s": 2.0,
+  "scenario_mapping": {
+    "E0": "E0 histórico",
+    "E1": "E1 histórico",
+    "E2": "D50 diagnóstico",
+    "S_HIST": "E2 histórico (suavizado)"
+  },
+  "retrospective_revision": true,
+  "python": "3.14.3 (main, Mar  3 2026, 15:00:44) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "streamlit": "1.67.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "RK4→tanques",
+    "seek exacto",
+    "iniciar",
+    "pausar",
+    "reiniciar",
+    "escenarios",
+    "vista 760px"
+  ],
+  "page_errors": []
+}

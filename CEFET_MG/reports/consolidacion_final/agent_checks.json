@@ -1,0 +1,970 @@
+[
+  {
+    "request": {},
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "scenario",
+        "kind": "value",
+        "type": "segmented_control",
+        "label": "Trayectoria"
+      },
+      {
+        "key": "download_trajectory",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar trayectoria calculada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Proyecto"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Sistema hidráulico"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "scenario",
+        "kind": "value",
+        "type": "segmented_control",
+        "label": "Trayectoria"
+      },
+      {
+        "key": "download_trajectory",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar trayectoria calculada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Modelo matemático"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Resultados experimentales"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Escenarios"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "download_comparison",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar comparación numérica"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Análisis complementarios"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Validación y ajuste"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Decisión"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "download_comparison",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar comparación numérica"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Fuentes y reproducción"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "download_config",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar configuración activa"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Sistema hidráulico"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "scenario",
+        "kind": "value",
+        "type": "segmented_control",
+        "label": "Trayectoria"
+      },
+      {
+        "key": "download_trajectory",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar trayectoria calculada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "scenario": "E2 · Operación constante al 50%"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "scenario",
+        "kind": "value",
+        "type": "segmented_control",
+        "label": "Trayectoria"
+      },
+      {
+        "key": "download_trajectory",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar trayectoria calculada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "run": 10
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "scenario",
+        "kind": "value",
+        "type": "segmented_control",
+        "label": "Trayectoria"
+      },
+      {
+        "key": "download_trajectory",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar trayectoria calculada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Modelo matemático",
+        "explore": true
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_qstar",
+        "kind": "value",
+        "type": "number_input",
+        "label": "qstar"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_r",
+        "kind": "value",
+        "type": "number_input",
+        "label": "r"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_k12",
+        "kind": "value",
+        "type": "number_input",
+        "label": "k12"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_kout",
+        "kind": "value",
+        "type": "number_input",
+        "label": "kout"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_kpump",
+        "kind": "value",
+        "type": "number_input",
+        "label": "kpump"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_b",
+        "kind": "value",
+        "type": "number_input",
+        "label": "b"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_c",
+        "kind": "value",
+        "type": "number_input",
+        "label": "c"
+      },
+      {
+        "key": "initial1_10_U_bomba_carga_monotona__retardo",
+        "kind": "value",
+        "type": "number_input",
+        "label": "h1 inicial (cm)"
+      },
+      {
+        "key": "initial2_10_U_bomba_carga_monotona__retardo",
+        "kind": "value",
+        "type": "number_input",
+        "label": "h2 inicial (cm)"
+      },
+      {
+        "key": "apply_parameters",
+        "kind": "trigger",
+        "type": "form_submit_button",
+        "label": "Aplicar exploración"
+      },
+      {
+        "key": "restore_parameters",
+        "kind": "trigger",
+        "type": "button",
+        "label": "Restaurar copia calibrada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "param_U_bomba_carga_monotona__retardo_qstar": 1.2
+      },
+      "trigger": {
+        "key": "apply_parameters"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_qstar",
+        "kind": "value",
+        "type": "number_input",
+        "label": "qstar"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_r",
+        "kind": "value",
+        "type": "number_input",
+        "label": "r"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_k12",
+        "kind": "value",
+        "type": "number_input",
+        "label": "k12"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_kout",
+        "kind": "value",
+        "type": "number_input",
+        "label": "kout"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_kpump",
+        "kind": "value",
+        "type": "number_input",
+        "label": "kpump"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_b",
+        "kind": "value",
+        "type": "number_input",
+        "label": "b"
+      },
+      {
+        "key": "param_U_bomba_carga_monotona__retardo_c",
+        "kind": "value",
+        "type": "number_input",
+        "label": "c"
+      },
+      {
+        "key": "initial1_10_U_bomba_carga_monotona__retardo",
+        "kind": "value",
+        "type": "number_input",
+        "label": "h1 inicial (cm)"
+      },
+      {
+        "key": "initial2_10_U_bomba_carga_monotona__retardo",
+        "kind": "value",
+        "type": "number_input",
+        "label": "h2 inicial (cm)"
+      },
+      {
+        "key": "apply_parameters",
+        "kind": "trigger",
+        "type": "form_submit_button",
+        "label": "Aplicar exploración"
+      },
+      {
+        "key": "restore_parameters",
+        "kind": "trigger",
+        "type": "button",
+        "label": "Restaurar copia calibrada"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  },
+  {
+    "request": {
+      "widget_state": {
+        "section": "Decisión"
+      }
+    },
+    "status": "ready",
+    "exceptions": [],
+    "actions": [
+      {
+        "key": "download_comparison",
+        "kind": "trigger",
+        "type": "download_button",
+        "label": "Descargar comparación numérica"
+      },
+      {
+        "key": "section",
+        "kind": "value",
+        "type": "radio",
+        "label": "Secciones"
+      },
+      {
+        "key": "run",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Corrida experimental"
+      },
+      {
+        "key": "window",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Horizonte registrado"
+      },
+      {
+        "key": "model",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Modelo"
+      },
+      {
+        "key": "step",
+        "kind": "value",
+        "type": "selectbox",
+        "label": "Paso RK4 máximo (s)"
+      },
+      {
+        "key": "explore",
+        "kind": "value",
+        "type": "toggle",
+        "label": "Modo exploratorio"
+      }
+    ]
+  }
+]
