@@ -1,13 +1,18 @@
-# Anexos vigentes A B y C
+# Anexos vigentes A, B y C
 
 ## Anexo A Propuesta y sistema
 
-Título: Modelado local y simulación de dos tanques CEFET-MG. Integrantes y fecha de
-sustentación por completar, sin inventar identidades. Pregunta: ¿Cómo influye la variabilidad de la señal de bombeo en la estabilidad de los niveles de dos tanques hidráulicos interconectados y qué condición de operación permite minimizar sus desviaciones respecto al equilibrio nominal?
-Dos tanques físicos acoplados; registros de CEFET-MG. Uso de datos externos autorizado
-por el docente según comunicación del usuario. No se recibió acta firmada ni aprobación
-formal de cada detalle. La pareja realiza modelado, no la adquisición original.
-Instrumento específico, fecha exacta del experimento y plano preciso no disponibles.
+- **Título del proyecto:** Simulación continua de dos tanques acoplados con datos experimentales de CEFET-MG
+- **Integrantes:**
+  - Kevin Santiago Correa Acosta — 67001271
+  - Santiago Cárdenas Rubio — 67001160
+- **Asignatura:** Modelado y Simulación
+- **Institución:** Universidad Católica de Colombia
+- **Fecha:** 8 de noviembre de 2026
+- **Pregunta de decisión:** ¿Cómo influye la variabilidad de la señal de bombeo en la estabilidad de los niveles de dos tanques hidráulicos interconectados y qué condición de operación permite minimizar sus desviaciones respecto al equilibrio nominal?
+- **Sistema de tanques y alcance:** Dos tanques físicos hidráulicos acoplados con niveles medibles ($h_1, h_2$ en cm) e impulsados por una señal de comando de bomba ($u$ en %). Se emplean los registros experimentales publicados por investigadores de CEFET-MG (Divinópolis, Brasil; DOI `10.5281/zenodo.19856119`). La pareja realiza el modelado matemático continuo, la calibración, la validación interna y la simulación de escenarios, no la adquisición física original. El instrumento específico de medición, la fecha exacta de adquisición en el laboratorio y el plano geométrico preciso no están disponibles en la fuente publicada.
+- **Herramienta de simulación:** Python (`numpy`, `pandas`, `scipy`, `numba`, `streamlit`) con integración numérica mediante Runge-Kutta de cuarto orden (RK4, paso máximo de 1 s y desfase efectivo de entrada de 2 s).
+- **Aprobación docente:** El uso del dataset externo fue autorizado según la comunicación de los estudiantes.
 
 ## Anexo B Variables y parámetros
 

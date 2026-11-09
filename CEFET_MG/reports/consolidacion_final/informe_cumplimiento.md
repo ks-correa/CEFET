@@ -25,8 +25,8 @@ La comparación histórica de medias E1/suavizado y su corrección permanecen en
 
 El sesgo sostenido de −2 pp desplaza el equilibrio calculado a (44.056, 28.624) cm: no hay rechazo perfecto. Las exploraciones iniciales son ±1 cm y los pulsos ±2 pp durante 40 s, aplicados por igual. Se informan excursiones de E0/E1 fuera del rectángulo medido. No se acredita robustez física, ahorro eléctrico ni exactitud fuera del dominio examinado.
 
-## Entregables y pendientes
+## Entregables y alcance documental
 
-Esquema: `docs/consolidacion_final/esquema_definitivo_13.md`. Documentación vigente e historial: `docs/consolidacion_final/indice_versiones.md`. Evidencia: `tests.txt`, `typecheck.txt`, `agent_checks.json`, `browser_checks.json`, `server_active.json`, `integridad.json` y figuras de este directorio.
+Esquema: `docs/consolidacion_final/esquema_definitivo_13.md`. Documentación vigente e historial: `docs/consolidacion_final/indice_versiones.md`. Anexos A, B y C: `docs/consolidacion_final/anexos_A_B_C.md`. Evidencia: `tests.txt`, `typecheck.txt`, `agent_checks.json`, `browser_checks.json`, `server_active.json`, `integridad.json` y figuras de este directorio.
 
-Faltan nombres de integrantes, fecha de sustentación y ensayo oral humano. La aceptación docente de datos externos procede de la comunicación del usuario; no se inventa un acta. No hay fotos propias ni plano certificado. Estas carencias se señalan también en las diapositivas.
+Integrantes registrados en el Anexo A: Kevin Santiago Correa Acosta (67001271) y Santiago Cárdenas Rubio (67001160), asignatura Modelado y Simulación, Universidad Católica de Colombia, fecha 8 de noviembre de 2026. La autorización docente para el uso del dataset externo se registra según la comunicación de los estudiantes; no se inventa un acta firmada. No hay fotografías propias del montaje físico ni plano geométrico certificado.

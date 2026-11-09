@@ -1,27 +1,20 @@
-# Paquete de inicio — Proyecto de simulación continua CEFET-MG
+# Registro de integridad de datos crudos iniciales (`LEEME_PRIMERO.md`)
 
-## Fuente principal
-Datos experimentales originales del conjunto «D-Stabilization of a Coupled-Tank System Using Experimental Data», CEFET-MG. Consultar el README y la publicación original para atribución y condiciones de uso.
+> **Nota de navegación:** La documentación principal del proyecto se encuentra en [`../README.md`](../README.md) y la guía rápida de ejecución y reproducción en [`README.md`](README.md). Este archivo se conserva porque la prueba automatizada `tests/test_project.py::test_raw_integrity` verifica contra él las huellas SHA-256 de los archivos originales de entrada.
 
-- data/raw/h1.csv y data/raw/h2.csv: 81 filas por tanque, t_ref y Experimento1..10.
-- data/raw/U.csv: 80 señales de bomba por intervalo; debe comprobarse la alineación temporal.
-- data/raw/complete_data.csv: 4502 observaciones de una captura más extensa; NO asumir sin análisis que son datos independientes ni que son duplicados de las otras tablas.
-- data/raw/README.md: fuente principal para unidades: niveles en cm, señal de bomba en %.
-- data/raw/operational_parameters.json: TRUNCADO, contiene etiquetas h3_op/h4_op y unidades conflictivas; solo usar como evidencia de inconsistencia, NO como configuración válida.
-- referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx: guía docente original; exige sistema real y mediciones y 13 diapositivas.
+## Archivos originales del paquete experimental
 
-## Secuencia científica
-1. Auditar fuente, archivos, unidades, entradas y corridas.
-2. Establecer criterios y protocolo de evaluación antes de seleccionar modelo.
-3. Implementar una línea base e integrar EDO con RK4.
-4. Calibrar y comparar modelos interpretables; incluir conservación y unidades.
-5. Evaluar errores y bondad de ajuste con los datos disponibles sin usar mediciones futuras.
-6. Concluir alcances reales y límites. Solo después considerar escenarios/UI/presentación.
+Datos experimentales originales de «D-Stabilization of a Coupled-Tank System Using Experimental Data» (CEFET-MG; Silva, Coelho y Leite, Zenodo, DOI `10.5281/zenodo.19856119`):
 
-## Nota de honestidad metodológica
-Este dataset ya se usó en una exploración adaptativa anterior y se conocieron métricas sobre repeticiones. Rehacer los experimentos mejora reproducibilidad pero NO crea por sí solo una nueva validación independiente. Las mismas señales de bomba se repiten en las corridas cortas. Solicitar autorización al docente para usar mediciones experimentales de terceros.
+- `data/raw/h1.csv` y `data/raw/h2.csv`: 81 filas por tanque (`t_ref` y `Experimento1..10`).
+- `data/raw/U.csv`: 80 señales de bomba por intervalo.
+- `data/raw/complete_data.csv`: 4502 observaciones de la captura experimental completa.
+- `data/raw/README.md`: documentación experimental original (niveles en cm, señal de bomba en %, muestreo $T_s = 4\text{ s}$).
+- `data/raw/operational_parameters.json`: archivo truncado en el depósito original; conservado únicamente como evidencia de auditoría documental.
+- `referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx`: guía docente original de la asignatura Modelado y Simulación.
 
-## Huellas SHA256
+## Huellas SHA256 verificadas por `tests/test_project.py`
+
 - data/raw/h1.csv: 8bcc8e870c19c9f54de122e65963fc52fe1fd23a95f6335a297a51d3d4daf81e
 - data/raw/h2.csv: dff73ca67048dc031bc9f6834115ae759e7f73b217ff09aea04f0411e24a3925
 - data/raw/U.csv: 2a6da4ae0f990ad94003444ca7ac8e2a7a5c14dfab1951be1fa741260be54cf3

@@ -233,19 +233,24 @@ seguridad, rechazo de perturbaciones reales o generalización a entradas nuevas.
       ('Base y dos alternativas','E0 experimental/E1 atenuado/E2 constante','19 comparaciones ejecutadas'),
       ('Indicadores y decisión sustentada','Misma regla histórica sobre conjunto revisado','E2 nominal; revisión retrospectiva declarada'),
       ('Pruebas y reproducibilidad','Pruebas originales más comprobaciones vigentes','Ver informe_cumplimiento.md'),
-      ('Presentación de 13 diapositivas','esquema_definitivo_13.md','Esquema listo; no se creó PowerPoint'),
-      ('Comprensión de ambos integrantes','Explicaciones orales y guía de reproducción','Material preparado; ensayo humano pendiente')]
-    write(DOC/'matriz_cumplimiento.md','# Matriz vigente de cumplimiento\n\nGuía leída y contrastada, incluyendo anexos. Esta matriz es la versión de entrega; la matriz de fase 3 se conserva como antecedente.\n\n'+table(pd.DataFrame(requirements,columns=['Requisito','Evidencia','Estado']))+'\n\nPonderaciones de guía: datos 15%, modelo 20%, implementación 15%, calibración/validación 20%, escenarios 15%, decisión 10%, presentación 5%. No se declara realizada la sustentación ni entregado un PowerPoint.\n')
-    write(DOC/'anexos_A_B_C.md',f'''# Anexos vigentes A B y C
+      ('Presentación de 13 diapositivas','esquema_definitivo_13.md y anexos_A_B_C.md','Estructura y anexos completos para sustentación'),
+      ('Comprensión de ambos integrantes','Explicaciones orales y guía de reproducción','Material documentado y verificable')]
+    write(DOC/'matriz_cumplimiento.md','# Matriz vigente de cumplimiento\n\nGuía leída y contrastada, incluyendo anexos. Esta matriz es la versión de entrega; la matriz de fase 3 se conserva como antecedente.\n\n'+table(pd.DataFrame(requirements,columns=['Requisito','Evidencia','Estado']))+'\n\nPonderaciones de guía: datos 15%, modelo 20%, implementación 15%, calibración/validación 20%, escenarios 15%, decisión 10%, presentación 5%.\n')
+    write(DOC/'anexos_A_B_C.md',f'''# Anexos vigentes A, B y C
 
 ## Anexo A Propuesta y sistema
 
-Título: Modelado local y simulación de dos tanques CEFET-MG. Integrantes y fecha de
-sustentación por completar, sin inventar identidades. Pregunta: {QUESTION}
-Dos tanques físicos acoplados; registros de CEFET-MG. Uso de datos externos autorizado
-por el docente según comunicación del usuario. No se recibió acta firmada ni aprobación
-formal de cada detalle. La pareja realiza modelado, no la adquisición original.
-Instrumento específico, fecha exacta del experimento y plano preciso no disponibles.
+- **Título del proyecto:** Simulación continua de dos tanques acoplados con datos experimentales de CEFET-MG
+- **Integrantes:**
+  - Kevin Santiago Correa Acosta — 67001271
+  - Santiago Cárdenas Rubio — 67001160
+- **Asignatura:** Modelado y Simulación
+- **Institución:** Universidad Católica de Colombia
+- **Fecha:** 8 de noviembre de 2026
+- **Pregunta de decisión:** {QUESTION}
+- **Sistema de tanques y alcance:** Dos tanques físicos hidráulicos acoplados con niveles medibles ($h_1, h_2$ en cm) e impulsados por una señal de comando de bomba ($u$ en %). Se emplean los registros experimentales publicados por investigadores de CEFET-MG (Divinópolis, Brasil; DOI `10.5281/zenodo.19856119`). La pareja realiza el modelado matemático continuo, la calibración, la validación interna y la simulación de escenarios, no la adquisición física original. El instrumento específico de medición, la fecha exacta de adquisición en el laboratorio y el plano geométrico preciso no están disponibles en la fuente publicada.
+- **Herramienta de simulación:** Python (`numpy`, `pandas`, `scipy`, `numba`, `streamlit`) con integración numérica mediante Runge-Kutta de cuarto orden (RK4, paso máximo de 1 s y desfase efectivo de entrada de 2 s).
+- **Aprobación docente:** El uso del dataset externo fue autorizado según la comunicación de los estudiantes.
 
 ## Anexo B Variables y parámetros
 
@@ -271,6 +276,11 @@ E1/E2 son contrafactuales. E2 gana nominalmente en 19 comparaciones; no es prueb
     # Esquema con los ocho campos exigidos, derivado de la guía y de evidencias existentes.
     slides=json.loads((ROOT/'reports/diagnostico_control_constante/esquema_13_diapositivas.json').read_text(encoding='utf-8'))
     for s in slides:s['limitations']=s.pop('caveat')
+    slides[0].update(
+      content='Título: Simulación continua de dos tanques acoplados con datos experimentales de CEFET-MG. Integrantes: Kevin Santiago Correa Acosta (67001271) y Santiago Cárdenas Rubio (67001160). Asignatura: Modelado y Simulación. Institución: Universidad Católica de Colombia. Fecha: 8 de noviembre de 2026.',
+      evidence='Título tipográfico e identificación académica, sin fotografía ficticia ni resultados decorativos.',
+      source=['docs/consolidacion_final/anexos_A_B_C.md','referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx'],
+      limitations='El montaje físico pertenece a CEFET-MG; la pareja realiza el modelado y la simulación sobre los registros experimentales publicados.')
     slides[1].update(objective='Vincular variabilidad de bombeo, desviaciones locales y decisión nominal.',content=QUESTION+' Se limita a alternativas evaluadas cerca del equilibrio, sin demanda externa documentada.',
       source=['docs/consolidacion_final/definicion_problema.md','data/raw/README.md'])
     slides[2].update(evidence='Recorte de la escena vigente de los dos tanques, sin presentarla como plano ni fotografía.',source=['reports/consolidacion_final/figures/aplicacion_vigente.png','src/simulation_engine.py','docs/consolidacion_final/modelo_y_variables.md'])
@@ -295,7 +305,7 @@ E1/E2 son contrafactuales. E2 gana nominalmente en 19 comparaciones; no es prueb
       limitations='Sin óptimo global, política física ensayada, generalización externa, ahorro de energía ni robustez experimental. Informar excursiones de E0/E1 fuera del rectángulo medido.')
     slides[12]['source']=['https://doi.org/10.5281/zenodo.19856119','data/raw/README.md','referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx','reports/consolidacion_final/integridad.json','docs/consolidacion_final/registro_metodologico.md']
     data_by_slide=[
-      'Título del proyecto y asignatura documentados. Nombres de integrantes y fecha de sustentación pendientes.',
+      'Título del proyecto, integrantes (67001271 y 67001160), asignatura Modelado y Simulación, Universidad Católica de Colombia y fecha 8 de noviembre de 2026.',
       'Referencias nominales 47.4/31.2 cm y 50%. Sin demanda externa documentada.',
       'Dos estados y tres flujos efectivos. El dibujo representa el modelo, no la geometría certificada.',
       '4502 filas en captura larga; muestreo ≈4 s; diez repeticiones; unidades cm y %; cuantización aparente ≈0.453 cm.',
@@ -332,32 +342,10 @@ E1/E2 son contrafactuales. E2 gana nominalmente en 19 comparaciones; no es prueb
         for path in slide['source']:
             if not path.startswith('http') and not (ROOT/path).exists():raise FileNotFoundError(path)
     write(OUT/'esquema_definitivo_13.json',json.dumps(slides,indent=2,ensure_ascii=False))
-    text='# Esquema definitivo de trece diapositivas para revisión\n\nTítulos y orden comprobados contra la guía original. No se crea el PowerPoint. Todas las fuentes son rutas desde CEFET_MG. Nombres y fecha de sustentación por completar.\n\n'
+    text='# Esquema definitivo de trece diapositivas para revisión\n\nTítulos y orden comprobados contra la guía original. Todas las fuentes son rutas verificables desde `CEFET_MG/`.\n\n'
     for s in slides:
         text+=f"## {s['n']}. {s['title']}\n\n**Objetivo:** {s['objective']}\n\n**Contenido resumido:** {s['content']}\n\n**Datos verificables:** {s['verifiable_data']}\n\n**Gráfica o figura:** {s['evidence']}\n\n**Archivo fuente:** "+'; '.join('`'+x+'`' for x in s['source'])+f"\n\n**Explicación oral sugerida:** {s['oral_explanation']}\n\n**Limitaciones que no deben omitirse:** {s['limitations']}\n\n"
     write(DOC/'esquema_definitivo_13.md',text)
-    write(DOC/'indice_versiones.md','''# Índice de entrega y antecedentes
-
-**Vigente:** app_final.py, src/final_scenarios.py, docs/consolidacion_final/ y
-reports/consolidacion_final/. E2 significa constante al 50%.
-
-**Histórico fase 3:** app.py, src/scenarios.py, docs/protocolo_escenarios.md,
-docs/anexos_proyecto.md, docs/evidencias_13_diapositivas.md, reports/simulador/.
-Allí E2 significa suavizado y E1 ganó en su conjunto restringido. Es evidencia histórica,
-sin vigencia como recomendación nominal general después del diagnóstico.
-
-**Diagnóstico posterior:** reports/diagnostico_control_constante/ y
-docs/esquema_13_diapositivas_revisado.md. D50 es el E2 de la entrega actual. La afirmación
-de ese informe de que la app aún no lo incorporaba describe aquel estado del proyecto,
-no la versión app_final.py. Se conserva el texto histórico intacto.
-
-**Identificación y precisión:** reports/auditoria_dataset.md, reports/bondad_ajuste.md,
-reports/optimizacion_precision/. Sus resultados científicos siguen vigentes con sus
-limitaciones y no se sustituyen por RMSE de regulación de escenarios.
-
-No hay contradicción de datos: son versiones de conjuntos de decisión. Este índice y
-registro_metodologico.md fijan qué interpretación corresponde a cada una.
-''')
     write(OUT/'informe_final.md',f'''# Consolidación científica final
 
 **Conclusión defendible:** E2, mando constante al 50%, es la mejor alternativa nominal
@@ -380,43 +368,7 @@ rectángulo de estados observado y no se proclama cobertura experimental total.
 Documentos vigentes: docs/consolidacion_final/. Esquema de 13 diapositivas con objetivos,
 contenido, cifras, figuras, fuentes, explicación oral y límites: esquema_definitivo_13.md.
 El informe_cumplimiento.md registra únicamente comprobaciones efectivamente ejecutadas.
-No se creó PowerPoint. Nombres, fecha y ensayo de sustentación siguen pendientes.
-''')
-    historical=OUT/'historico';historical.mkdir(exist_ok=True)
-    archive=historical/'README_pre_consolidacion.md'
-    if not archive.exists():shutil.copyfile(ROOT/'README.md',archive)
-    write(ROOT/'README.md','''# CEFET-MG Entrega consolidada vigente
-
-Ejecutar **iniciar_entrega_final.ps1** o `python -m streamlit run app_final.py`.
-La aplicación vigente usa E0 experimental, E1 atenuado y E2 constante al 50%.
-El antiguo suavizado está en Análisis complementarios como S_HIST.
-
-La constante es la mejor alternativa nominal evaluada dentro de U, cerca del equilibrio
-y sin demandas externas documentadas. No se afirma óptimo global, ahorro eléctrico,
-ensayo físico de políticas nuevas ni rechazo de perturbaciones del montaje.
-
-- Documentación vigente: docs/consolidacion_final/.
-- Esquema definitivo para revisión: docs/consolidacion_final/esquema_definitivo_13.md.
-- Informe científico: reports/consolidacion_final/informe_final.md.
-- Comprobaciones ejecutadas: reports/consolidacion_final/informe_cumplimiento.md.
-- Índice de antecedentes preservados: docs/consolidacion_final/indice_versiones.md.
-
-Reproducir sin recalibrar:
-
-```powershell
-uv pip install --python ../.venv/Scripts/python.exe -r requirements-app.txt
-../.venv/Scripts/python.exe -m src.final_consolidation
-../.venv/Scripts/python.exe -m src.final_documentation
-../.venv/Scripts/python.exe -m pytest -q tests
-../.venv/Scripts/python.exe -m streamlit run app_final.py
-```
-
-Si .venv es local, quitar ../. Los paquetes científicos fijados siguen siendo los originales.
-app.py, iniciar_simulador.ps1 y src/scenarios.py se conservan como versión histórica,
-no como punto de entrada de esta entrega. Los resultados anteriores no se sobrescriben.
-El README anterior se preserva en reports/consolidacion_final/historico/.
-Datos de investigadores externos, uso autorizado por el docente según comunicación del
-usuario. No hay mediciones de la pareja ni presentación PowerPoint definitiva generada.
+Anexos A, B y C completados en docs/consolidacion_final/anexos_A_B_C.md (Kevin Santiago Correa Acosta — 67001271; Santiago Cárdenas Rubio — 67001160; Modelado y Simulación, Universidad Católica de Colombia, 8 de noviembre de 2026).
 ''')
     print('Documentación vigente consolidada; trece diapositivas con ocho campos y fuentes verificadas.')
 

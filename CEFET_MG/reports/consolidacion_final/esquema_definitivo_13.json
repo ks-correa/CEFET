@@ -3,14 +3,14 @@
     "n": 1,
     "title": "Portada",
     "objective": "Identificar el trabajo, autores y alcance.",
-    "content": "Título propuesto: Modelado local y simulación de dos tanques CEFET-MG. Asignatura Modelado y Simulación. Integrantes y fecha de sustentación por completar.",
-    "evidence": "Título tipográfico, sin fotografía ficticia ni resultados decorativos.",
+    "content": "Título: Simulación continua de dos tanques acoplados con datos experimentales de CEFET-MG. Integrantes: Kevin Santiago Correa Acosta (67001271) y Santiago Cárdenas Rubio (67001160). Asignatura: Modelado y Simulación. Institución: Universidad Católica de Colombia. Fecha: 8 de noviembre de 2026.",
+    "evidence": "Título tipográfico e identificación académica, sin fotografía ficticia ni resultados decorativos.",
     "source": [
-      "docs/anexos_proyecto.md",
+      "docs/consolidacion_final/anexos_A_B_C.md",
       "referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx"
     ],
-    "limitations": "Faltan nombres de los dos integrantes y fecha de sustentación. No inventarlos.",
-    "verifiable_data": "Título del proyecto y asignatura documentados. Nombres de integrantes y fecha de sustentación pendientes.",
+    "limitations": "El montaje físico pertenece a CEFET-MG; la pareja realiza el modelado y la simulación sobre los registros experimentales publicados.",
+    "verifiable_data": "Título del proyecto, integrantes (67001271 y 67001160), asignatura Modelado y Simulación, Universidad Católica de Colombia y fecha 8 de noviembre de 2026.",
     "oral_explanation": "Presentamos un trabajo de modelado con registros publicados de un montaje real. Las mediciones pertenecen a los investigadores y nuestro aporte es su análisis y simulación."
   },
   {

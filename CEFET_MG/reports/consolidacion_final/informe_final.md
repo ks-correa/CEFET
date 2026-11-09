@@ -27,4 +27,4 @@ rectángulo de estados observado y no se proclama cobertura experimental total.
 Documentos vigentes: docs/consolidacion_final/. Esquema de 13 diapositivas con objetivos,
 contenido, cifras, figuras, fuentes, explicación oral y límites: esquema_definitivo_13.md.
 El informe_cumplimiento.md registra únicamente comprobaciones efectivamente ejecutadas.
-No se creó PowerPoint. Nombres, fecha y ensayo de sustentación siguen pendientes.
+Anexos A, B y C completados en docs/consolidacion_final/anexos_A_B_C.md (Kevin Santiago Correa Acosta — 67001271; Santiago Cárdenas Rubio — 67001160; Modelado y Simulación, Universidad Católica de Colombia, 8 de noviembre de 2026).

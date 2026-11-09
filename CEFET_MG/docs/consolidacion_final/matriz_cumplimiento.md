@@ -14,7 +14,7 @@ Guía leída y contrastada, incluyendo anexos. Esta matriz es la versión de ent
 | Base y dos alternativas | E0 experimental/E1 atenuado/E2 constante | 19 comparaciones ejecutadas |
 | Indicadores y decisión sustentada | Misma regla histórica sobre conjunto revisado | E2 nominal; revisión retrospectiva declarada |
 | Pruebas y reproducibilidad | Pruebas originales más comprobaciones vigentes | Ver informe_cumplimiento.md |
-| Presentación de 13 diapositivas | esquema_definitivo_13.md | Esquema listo; no se creó PowerPoint |
-| Comprensión de ambos integrantes | Explicaciones orales y guía de reproducción | Material preparado; ensayo humano pendiente |
+| Presentación de 13 diapositivas | esquema_definitivo_13.md y anexos_A_B_C.md | Estructura y anexos completos para sustentación |
+| Comprensión de ambos integrantes | Explicaciones orales y guía de reproducción | Material documentado y verificable |
 
-Ponderaciones de guía: datos 15%, modelo 20%, implementación 15%, calibración/validación 20%, escenarios 15%, decisión 10%, presentación 5%. No se declara realizada la sustentación ni entregado un PowerPoint.
+Ponderaciones de guía: datos 15%, modelo 20%, implementación 15%, calibración/validación 20%, escenarios 15%, decisión 10%, presentación 5%.

@@ -1,22 +1,22 @@
 # Esquema definitivo de trece diapositivas para revisión
 
-Títulos y orden comprobados contra la guía original. No se crea el PowerPoint. Todas las fuentes son rutas desde CEFET_MG. Nombres y fecha de sustentación por completar.
+Títulos y orden comprobados contra la guía original. Todas las fuentes son rutas verificables desde `CEFET_MG/`.
 
 ## 1. Portada
 
 **Objetivo:** Identificar el trabajo, autores y alcance.
 
-**Contenido resumido:** Título propuesto: Modelado local y simulación de dos tanques CEFET-MG. Asignatura Modelado y Simulación. Integrantes y fecha de sustentación por completar.
+**Contenido resumido:** Título: Simulación continua de dos tanques acoplados con datos experimentales de CEFET-MG. Integrantes: Kevin Santiago Correa Acosta (67001271) y Santiago Cárdenas Rubio (67001160). Asignatura: Modelado y Simulación. Institución: Universidad Católica de Colombia. Fecha: 8 de noviembre de 2026.
 
-**Datos verificables:** Título del proyecto y asignatura documentados. Nombres de integrantes y fecha de sustentación pendientes.
+**Datos verificables:** Título del proyecto, integrantes (67001271 y 67001160), asignatura Modelado y Simulación, Universidad Católica de Colombia y fecha 8 de noviembre de 2026.
 
-**Gráfica o figura:** Título tipográfico, sin fotografía ficticia ni resultados decorativos.
+**Gráfica o figura:** Título tipográfico e identificación académica, sin fotografía ficticia ni resultados decorativos.
 
-**Archivo fuente:** `docs/anexos_proyecto.md`; `referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx`
+**Archivo fuente:** `docs/consolidacion_final/anexos_A_B_C.md`; `referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx`
 
 **Explicación oral sugerida:** Presentamos un trabajo de modelado con registros publicados de un montaje real. Las mediciones pertenecen a los investigadores y nuestro aporte es su análisis y simulación.
 
-**Limitaciones que no deben omitirse:** Faltan nombres de los dos integrantes y fecha de sustentación. No inventarlos.
+**Limitaciones que no deben omitirse:** El montaje físico pertenece a CEFET-MG; la pareja realiza el modelado y la simulación sobre los registros experimentales publicados.
 
 ## 2. Problema y pregunta de decisión
 
