@@ -1,3 +1,4 @@
+from src.documentary_archive import verify_original_manifest, archived_bytes
 from dataclasses import replace
 import json,hashlib
 import numpy as np
@@ -78,7 +79,7 @@ def test_all_model_references_available():
 def test_scenarios_do_not_change_scientific_files():
     record=json.loads((ROOT/'reports/simulador/integridad.json').read_text())
     assert record['unchanged']
-    for name,sha in record['sha256'].items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==sha
+    verify_original_manifest(record['sha256'])
 
 def test_decision_is_not_preassigned():
     _,table,_=compare_scenarios(load_run())

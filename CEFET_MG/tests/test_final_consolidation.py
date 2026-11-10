@@ -1,3 +1,4 @@
+from src.documentary_archive import verify_original_manifest, archived_bytes
 import hashlib
 import json
 import numpy as np
@@ -13,8 +14,7 @@ def read(name):
     return json.loads((OUT / name).read_text(encoding='utf-8'))
 
 def test_final_history_and_validation_preserved():
-    for name, digest in read('manifest_historico.json').items():
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
+    verify_original_manifest(read('manifest_historico.json'))
     assert read('integridad.json')['unchanged']
     scores = pd.read_csv(OUT / 'validacion_U_sin_cambios.csv')
     assert scores.max_trajectory_difference_cm.max() == 0

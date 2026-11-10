@@ -6,7 +6,7 @@
     "content": "Título propuesto: Modelado local y simulación de dos tanques CEFET-MG. Asignatura Modelado y Simulación. Integrantes y fecha de sustentación por completar.",
     "evidence": "Título tipográfico, sin fotografía ficticia ni resultados decorativos.",
     "source": [
-      "docs/anexos_proyecto.md",
+      "https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/anexos_proyecto.md",
       "referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx"
     ],
     "caveat": "Faltan nombres de los dos integrantes y fecha de sustentación. No inventarlos."
@@ -18,7 +18,7 @@
     "content": "Reproducir niveles reales con un modelo local. Pregunta revisada: ¿conviene mantener 50% o transformar la excitación experimental para regular ambos niveles, sin demandas externas documentadas? No partir de que una señal variable sea necesaria.",
     "evidence": "Breve contraste entre entrada de identificación y operación nominal. La revisión se sustenta en el diagnóstico D50.",
     "source": [
-      "docs/definicion_problema.md",
+      "https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/definicion_problema.md",
       "data/raw/README.md",
       "reports/diagnostico_control_constante/informe_diagnostico.md"
     ],
@@ -47,7 +47,7 @@
       "reports/figures/exploracion.png",
       "reports/auditoria_dataset.md",
       "data/raw/README.md",
-      "docs/anexos_proyecto.md"
+      "https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/anexos_proyecto.md"
     ],
     "caveat": "Instrumento específico, fecha exacta de adquisición y fotografías verificadas no disponibles. Autorización comunicada, sin acta adjunta. No equiparar cuantización con exactitud certificada."
   },
@@ -59,7 +59,7 @@
     "evidence": "Tabla de parametros_U.csv con valores exactos; redondeo sólo visual indicando que se ejecutan los valores completos.",
     "source": [
       "reports/simulador/parametros_U.csv",
-      "docs/anexos_proyecto.md",
+      "https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/anexos_proyecto.md",
       "reports/optimizacion_precision/fit_U_bomba_carga_monotona__retardo.json"
     ],
     "caveat": "No convertir a litros/s ni deducir áreas a partir de capacidad nominal. Los 2 s no son retardo físico certificado."

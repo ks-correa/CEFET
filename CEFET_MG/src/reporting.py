@@ -1,3 +1,4 @@
+from .documentary_archive import write_document, historical_source, ARCHIVED
 """Redacta informes a partir de resultados ejecutados, sin resultados precargados."""
 import json
 import numpy as np
@@ -43,7 +44,7 @@ def main():
         gates[model]=bool((q.NRMSE<=.3).all())
     eligible=[name for name,ok in gates.items() if ok]
     preferred=min(eligible,key=lambda name:len(specification(NAMES.index(name))[0])) if eligible else None
-    write=lambda path,s:path.write_text(s,encoding='utf-8')
+    write=write_document
     if preferred:
         write(out/'modelo_recomendado.json',json.dumps(dict(model=preferred,
               parameters=logs[preferred]['principal']['parameters'],

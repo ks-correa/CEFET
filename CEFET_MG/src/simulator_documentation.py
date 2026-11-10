@@ -1,3 +1,4 @@
+from .documentary_archive import write_document, historical_source, ARCHIVED
 """Documentación de fase 3 derivada de resultados ya ejecutados."""
 import json
 import pandas as pd
@@ -6,8 +7,9 @@ from .simulation_engine import calibrated_config,U
 from .reporting import table
 
 OUT=ROOT/'reports/simulador'
-def write(path,text):path.write_text(text,encoding='utf-8')
+def write(path,text):write_document(path,text)
 def update(path,addition):
+    if path.relative_to(ROOT).as_posix() in ARCHIVED: return
     text=path.read_text(encoding='utf-8').split('## Actualización de fase 3')[0].rstrip()
     write(path,text+'\n\n## Actualización de fase 3\n\n'+addition+'\n')
 

@@ -60,7 +60,7 @@ Títulos y orden comprobados contra la guía original. Todas las fuentes son rut
 
 **Gráfica o figura:** Gráfica exploratoria de captura completa y tabla pequeña de archivos/variables. Cuantización aparente ≈0.453 cm por código.
 
-**Archivo fuente:** `reports/figures/exploracion.png`; `reports/auditoria_dataset.md`; `data/raw/README.md`; `docs/anexos_proyecto.md`
+**Archivo fuente:** `reports/figures/exploracion.png`; `reports/auditoria_dataset.md`; `data/raw/README.md`; `https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/anexos_proyecto.md`
 
 **Explicación oral sugerida:** Los datos tienen trazabilidad y unidades documentadas. Las diez corridas cortas son partes de la captura larga y repiten una señal, por lo que no duplicamos observaciones.
 

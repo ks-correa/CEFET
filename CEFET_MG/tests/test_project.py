@@ -1,3 +1,4 @@
+from src.documentary_archive import verify_original_manifest, archived_bytes
 import hashlib,json
 import numpy as np
 import pytest
@@ -12,7 +13,7 @@ from src.validation import split_groups
 def test_raw_integrity():
     m=json.loads((ROOT/'data/processed/sha256.json').read_text())
     for name,sha in m.items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==sha
-    original=(ROOT/'LEEME_PRIMERO.md').read_text(encoding='utf-8')
+    original=archived_bytes('LEEME_PRIMERO.md').decode('utf-8')
     for sha in m.values():assert sha in original
 
 def test_alignment_and_units():

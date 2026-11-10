@@ -1,3 +1,4 @@
+from src.documentary_archive import verify_original_manifest, archived_bytes
 import json
 import hashlib
 import numpy as np
@@ -11,8 +12,8 @@ from src.rk4_solver import solve as old_solve
 
 def test_original_files_and_results_preserved():
     before=json.loads((OUT/'original_manifest.json').read_text())
-    after=snapshot()
-    assert before and all(after.get(k)==v for k,v in before.items())
+    assert before
+    verify_original_manifest(before)
 
 def test_frozen_reference_scores_unchanged():
     old=pd.read_csv(ROOT/'reports/metrics.csv');new=pd.read_csv(OUT/'metrics.csv')

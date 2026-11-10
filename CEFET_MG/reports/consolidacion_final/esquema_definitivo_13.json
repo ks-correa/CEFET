@@ -52,7 +52,7 @@
       "reports/figures/exploracion.png",
       "reports/auditoria_dataset.md",
       "data/raw/README.md",
-      "docs/anexos_proyecto.md"
+      "docs/consolidacion_final/anexos_A_B_C.md"
     ],
     "limitations": "Instrumento específico, fecha exacta de adquisición y fotografías verificadas no disponibles. Autorización comunicada, sin acta adjunta. No equiparar cuantización con exactitud certificada.",
     "verifiable_data": "4502 filas en captura larga; muestreo ≈4 s; diez repeticiones; unidades cm y %; cuantización aparente ≈0.453 cm.",

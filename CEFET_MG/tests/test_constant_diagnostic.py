@@ -1,3 +1,4 @@
+from src.documentary_archive import verify_original_manifest, archived_bytes
 import json,hashlib
 import numpy as np
 import pandas as pd
@@ -12,7 +13,7 @@ def test_preexisting_files_preserved_including_original_protocols():
     normalized={p.replace('\\','/') for p in original}
     assert 'docs/protocolo_escenarios.md' in normalized
     assert 'reports/simulador/decisiones.json' in normalized
-    for name,sha in original.items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==sha
+    verify_original_manifest(original)
 
 def test_constant_uses_same_configuration_and_compares_every_window():
     cfg=calibrated_config();record=json.loads((OUT/'configuracion.json').read_text())

@@ -1,3 +1,4 @@
+from .documentary_archive import write_document, historical_source, ARCHIVED
 """Informe complementario y esquema verificable de trece diapositivas, sin crear PPTX."""
 import json,hashlib
 import numpy as np
@@ -22,7 +23,7 @@ def main():
     mean8=means[(means.run==8)&(means.window=='excitacion')].iloc[0]
     original_reference=pd.read_csv(ROOT/'reports/simulador/regresion_U.csv')
     reference=original_reference.groupby('tank')[['MAE','RMSE','NRMSE','bias']].mean().reset_index()
-    def write(path,text):path.write_text(text,encoding='utf-8')
+    def write(path,text):write_document(path,text)
     write(OUT/'informe_diagnostico.md',f'''# Comprobación complementaria de la decisión E1
 
 **D50, mando constante al 50%, supera a E1 bajo las condiciones nominales simuladas.**
@@ -237,6 +238,7 @@ niveles simulados de corrida 8. figures/media_*.png muestra la ablación de medi
     begin=next(i for i,t in enumerate(paragraphs) if t.startswith('3. '));end=next(i for i,t in enumerate(paragraphs) if t.startswith('4. '))
     section=paragraphs[begin:end]
     for slide in slides:
+        slide['source'] = [historical_source(source) for source in slide['source']]
         i=section.index(str(slide['n']))
         if section[i+1]!=slide['title']:raise RuntimeError('Título distinto de la guía')
         for source in slide['source']:
