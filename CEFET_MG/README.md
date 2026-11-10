@@ -30,7 +30,7 @@ O ejecutando directamente con el intérprete del entorno virtual:
 ## 3. Ejecutar pruebas y reproducir resultados vigentes (sin recalibrar `U`)
 
 ```powershell
-# Ejecutar las 46 pruebas automatizadas
+# Ejecutar las 48 pruebas automatizadas
 ..\.venv\Scripts\python.exe -m pytest -q tests
 
 # Reproducir las 19 comparaciones nominales, las 90 exploraciones de sensibilidad y la documentación vigente

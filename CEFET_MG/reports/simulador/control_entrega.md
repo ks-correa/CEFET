@@ -14,7 +14,7 @@ presentación definitiva ni validación externa nueva del modelo.
 | 6 | Tabla con números de las simulaciones | APROBADO | comparacion_escenarios.csv |
 | 7 | Decisión derivada de indicadores | APROBADO | src/scenarios.py::decide; prueba sin ganador preasignado |
 | 8 | Streamlit funciona y conserva pruebas | APROBADO | agent_checks.json; browser_checks.json; tests.txt |
-| 9 | Limitaciones y fuentes documentadas | APROBADO | anexos_proyecto.md; resultados_y_decision.md; app |
+| 9 | Limitaciones y fuentes documentadas | APROBADO | [anexos archivados](https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/anexos_proyecto.md); resultados_y_decision.md; app |
 | 10 | Evidencias de 13 diapositivas preparadas | APROBADO | https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/evidencias_13_diapositivas.md; sin presentación definitiva |
 
 Pruebas ejecutadas: 34 aprobadas (23 existentes y 11 nuevas, con varios casos de interfaz).

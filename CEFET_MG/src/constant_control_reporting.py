@@ -279,7 +279,7 @@ Las referencias a E1 de los informes históricos se mantienen y se contextualiza
     write(ROOT/'docs/esquema_13_diapositivas_revisado.md',outline)
     write(OUT/'README.md','''# Diagnóstico complementario separado
 
-Leer informe_diagnostico.md y docs/esquema_13_diapositivas_revisado.md.
+Leer informe_diagnostico.md y docs/consolidacion_final/esquema_definitivo_13.md; el esquema previo está en la etiqueta cefet-archivo-cientifico-completo.
 No se modificó el simulador ni los tres escenarios principales. No se creó PowerPoint.
 
 Desde CEFET_MG y usando el entorno Python existente:

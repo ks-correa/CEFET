@@ -16,7 +16,7 @@
 
 ## 2. Antecedentes históricos preservados por reproducibilidad y pruebas automatizadas
 
-Los siguientes directorios y documentos corresponden a etapas previas de investigación y desarrollo. Se conservan **íntegros byte a byte** porque sustentan la trazabilidad metodológica y sus huellas SHA-256 son verificadas automáticamente por la batería de pruebas (`tests/test_project.py`, `tests/test_precision.py`, `tests/test_simulator.py`, `tests/test_constant_diagnostic.py` y `tests/test_final_consolidation.py`):
+Los siguientes directorios y documentos corresponden a etapas previas de investigación y desarrollo. Los archivos científicos conservados permanecen **íntegros byte a byte**; los documentos retirados o actualizados se recuperan de la etiqueta histórica. Estos antecedentes sustentan la trazabilidad metodológica y sus huellas SHA-256 son verificadas automáticamente por la batería de pruebas (`tests/test_project.py`, `tests/test_precision.py`, `tests/test_simulator.py`, `tests/test_constant_diagnostic.py` y `tests/test_final_consolidation.py`):
 
 1. **Etapa 1 — Auditoría del dataset y línea base (`A_lineal`, `B_hidraulico`, `C_bomba`, `D_conservativo`):**
    - **Archivos:** `reports/auditoria_dataset.md`, `reports/bondad_ajuste.md`, `reports/viabilidad.md`, `reports/calibration.json`, `reports/metrics.csv`, `reports/robustness.csv`, `reports/figures/` y `docs/protocolo_previo.md`, `https://github.com/ks-correa/CEFET/blob/cefet-archivo-cientifico-completo/CEFET_MG/docs/definicion_problema.md`, `docs/modelo_matematico.md`, `docs/registro_decisiones.md`.
@@ -35,34 +35,63 @@ Los siguientes directorios y documentos corresponden a etapas previas de investi
    - **Contexto metodológico y reproducción:** demostró que la operación constante al $50\%$ (`D50`, hoy `E2` vigente) evita excitar desviaciones respecto al equilibrio nominal incorporado en `U` y motivó la revisión retrospectiva documentada en [`registro_metodologico.md`](registro_metodologico.md). Comandos de reproducción aislada: `python -m src.constant_control_diagnostic` y `python -m src.constant_control_reporting`.
 
 
-## Depuraci?n documental e integridad vigente
+## Depuración documental e integridad vigente (9 de noviembre de 2026)
 
-Se retiraron siete documentos redundantes: LEEME_PRIMERO.md, anexos_proyecto.md,
-definicion_problema.md, evidencias_13_diapositivas.md,
-esquema_13_diapositivas_revisado.md, guia_simulador.md y matriz_cumplimiento_guia.md.
-La gu?a r?pida est? en README; los anexos, problema, esquema y cumplimiento vigentes
-est?n en este directorio. El registro de hashes de LEEME est? duplicado en
-`data/processed/sha256.json`; las pruebas conservan tambi?n la comprobaci?n de su
-contenido archivado. Se conservan los protocolos, modelos hist?ricos e informes de
-optimizaci?n porque explican estructuras, variantes y resultados espec?ficos.
+Se revisaron los 37 Markdown restantes y se conservan por su contenido experimental,
+metodológico, de calibración, validación o evidencia de decisiones. No se impuso otra
+cuota de eliminaciones. Resultado: **44 → 37 Markdown** (siete retirados).
 
-La etiqueta anotada publicada `cefet-archivo-cientifico-completo` apunta a
-`444042936475cd204576d6488f7599993ee98636`, con los 44 Markdown y manifiestos originales.
-Para recuperar y comprobar la versi?n completa, usar un checkout separado:
+| Documento retirado (relativo a CEFET_MG/) | Motivo y consulta vigente |
+|---|---|
+| LEEME_PRIMERO.md | Guía inicial sustituida por los README. Sus hashes originales siguen en data/processed/sha256.json; la prueba también comprueba el texto archivado. |
+| docs/anexos_proyecto.md | Anexos preliminares sustituidos por anexos_A_B_C.md. Se conserva el contexto original en la etiqueta. |
+| docs/definicion_problema.md | La definición vigente declara el alcance y la revisión retrospectiva. |
+| docs/esquema_13_diapositivas_revisado.md | Esquema preliminar sustituido por esquema_definitivo_13.md. |
+| docs/evidencias_13_diapositivas.md | Las fuentes verificables están en el esquema vigente y sus metadatos JSON. |
+| docs/guia_simulador.md | La ejecución y reproducción están en los README vigentes. |
+| docs/matriz_cumplimiento_guia.md | La matriz vigente y los anexos recogen los requisitos actuales. |
+
+La etiqueta anotada y publicada
+[cefet-archivo-cientifico-completo](https://github.com/ks-correa/CEFET/tree/cefet-archivo-cientifico-completo)
+apunta a `444042936475cd204576d6488f7599993ee98636`. Conserva los 44 Markdown,
+los manifiestos originales y las pruebas anteriores. Para recuperar la versión completa:
 
 ```powershell
 git fetch origin tag cefet-archivo-cientifico-completo
 git worktree add ../CEFET-historico cefet-archivo-cientifico-completo
+Set-Location ../CEFET-historico/CEFET_MG
+# Usar el Python del entorno científico instalado, sin recalibrar:
+python -m pytest -q tests
 ```
 
-Los cinco manifiestos hist?ricos no se editan. Las cinco pruebas de integridad
-ahora verifican en Git los bytes documentales retirados o actualizados de forma
-expl?cita en `reports/consolidacion_final/integridad_vigente.json`; para el resto
-siguen comprobando los archivos locales. Git aplica sus filtros de checkout porque
-los manifiestos originales se calcularon sobre CRLF en Windows. Es necesario disponer
-de Git y de la etiqueta local; no se omiten archivos ausentes ni hashes discordantes.
-La nueva prueba de integridad vigente comprueba todos los archivos conservados
-registrados, incluidas las pruebas y los generadores adaptados. Su cobertura es
-complementaria a los manifiestos originales. Los valores cient?ficos esperados
-no cambian. Los generadores hist?ricos omiten los siete documentos retirados y
-sus metadatos enlazan la versi?n hist?rica recuperable cuando corresponde.
+Los manifiestos `manifest_historico.json`, `original_manifest.json`, `manifest_previo.json`,
+`reports/simulador/integridad.json` y `data/processed/sha256.json` no se editan.
+Las pruebas de final_consolidation, constant_diagnostic, precision y simulator siguen
+recorriendo **todas** sus entradas: los archivos científicos se leen del checkout actual;
+solamente las rutas documentales enumeradas en `integridad_vigente.json` se leen de la
+etiqueta. La prueba de project comprueba los datos locales y los hashes citados en
+LEEME_PRIMERO archivado. No se omiten ausentes ni discrepancias. Esto cambia el alcance:
+la comprobación de esos antecedentes documentales es histórica, no del checkout vigente.
+
+`test_current_integrity.py` complementa las pruebas originales: comprueba las huellas de
+los archivos vigentes registrados, los siete documentos recuperables y el commit exacto
+de la etiqueta. También exige cobertura de todos los archivos versionados (salvo el propio
+manifiesto) y comprueba con datos temporales que un dataset ausente o alterado causa error.
+Git es necesario y la etiqueta debe existir localmente. Los filtros de
+checkout indicados por ruta permiten recuperar los bytes CRLF de los manifiestos de
+Windows; para las rutas registradas sin filtros se recupera el blob original.
+No se cambian expectativas científicas ni se recalibran modelos. El script de cierre
+`record_final_delivery.py` utiliza la misma separación de integridad; sus evidencias de
+46 pruebas siguen siendo históricas y no se presentan como la ejecución actual.
+
+Los generadores omiten los siete documentos eliminados, redirigen sus referencias a
+fuentes vigentes o a la etiqueta y conservan el comportamiento científico. La comprobación
+actual y las razones de conservación por archivo están en
+[auditoria_depuracion.json](../../reports/consolidacion_final/auditoria_depuracion.json).
+Los registros históricos de pruebas y navegador se conservan sin sobrescribirlos.
+
+Los ocho destinos de referencias se verifican desde las primeras ocho entradas de
+Referencias del README principal: cinco rutas públicas de GitHub, Zenodo, SciPy y el
+repositorio. **No hay un PowerPoint versionado en este repositorio**: se contrasta este
+listado público y el campo source de la diapositiva 13 contra la etiqueta, sin afirmar
+una inspección de hipervínculos de un PPTX externo. No se modifica la diapositiva 13.

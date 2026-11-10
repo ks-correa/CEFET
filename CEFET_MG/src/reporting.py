@@ -290,8 +290,8 @@ RK4; el primer uso compila. No descarga datos ni modifica originales. Semilla 20
 Los informes se regeneran después de los experimentos para mantener cifras trazables.
 
 Leer `reports/viabilidad.md`, `reports/auditoria_dataset.md`, `reports/bondad_ajuste.md`,
-`docs/protocolo_previo.md`, `docs/modelo_matematico.md`, `docs/definicion_problema.md`
-y `docs/matriz_cumplimiento_guia.md`. Resultados completos en CSV/JSON y figures/.
+`docs/protocolo_previo.md`, `docs/modelo_matematico.md`,
+`docs/consolidacion_final/definicion_problema.md` y `docs/consolidacion_final/matriz_cumplimiento.md`. Resultados completos en CSV/JSON y figures/.
 
 Fuente: Silva, Coelho y Leite. Dataset D-Stabilization of a Coupled-Tank System Using
 Experimental Data. Zenodo, v1.0.0, 2026. https://doi.org/10.5281/zenodo.19856119

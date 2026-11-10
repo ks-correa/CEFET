@@ -150,14 +150,14 @@ CEFET/
     │   ├── simulador/                         # Resultados históricos de la fase 3 preliminar
     │   └── figures/                           # Gráficas de exploración del dataset y línea base inicial
     ├── scripts/                               # Scripts de verificación de servidor, navegador y cierre de entrega
-    └── tests/                                 # Batería de 46 pruebas automatizadas de integridad, RK4, modelos y UI
+    └── tests/                                 # Batería de 48 pruebas automatizadas de integridad, RK4, modelos y UI
 ```
 
 ---
 
 ## Pruebas y reproducibilidad
 
-Para ejecutar la batería completa de **46 pruebas automatizadas** (integridad SHA-256 de datos y antecedentes, convergencia RK4, causalidad del desfase de 2 s, conservación efectiva, reproducción de métricas de `U`, escenarios `E0`/`E1`/`E2` y pruebas de interfaz `AppTest`):
+Para ejecutar la batería completa de **48 pruebas automatizadas** (integridad SHA-256 de datos y antecedentes, convergencia RK4, causalidad del desfase de 2 s, conservación efectiva, reproducción de métricas de `U`, escenarios `E0`/`E1`/`E2` y pruebas de interfaz `AppTest`):
 
 ```powershell
 Set-Location .\CEFET_MG
@@ -166,7 +166,7 @@ Set-Location .\CEFET_MG
 
 Las evidencias de verificación ejecutadas se localizan en [`CEFET_MG/reports/consolidacion_final/`](CEFET_MG/reports/consolidacion_final/):
 
-- [`tests.txt`](CEFET_MG/reports/consolidacion_final/tests.txt): registro de las 46 pruebas aprobadas.
+- [`tests.txt`](CEFET_MG/reports/consolidacion_final/tests.txt): registro histórico de las 46 pruebas aprobadas; la verificación documental actual está en `auditoria_depuracion.json`.
 - [`typecheck.txt`](CEFET_MG/reports/consolidacion_final/typecheck.txt): verificación estática de tipos.
 - [`integridad.json`](CEFET_MG/reports/consolidacion_final/integridad.json) y [`manifest_historico.json`](CEFET_MG/reports/consolidacion_final/manifest_historico.json): verificación de huellas SHA-256 sin alteración de resultados científicos.
 - [`browser_checks.json`](CEFET_MG/reports/consolidacion_final/browser_checks.json) y [`agent_checks.json`](CEFET_MG/reports/consolidacion_final/agent_checks.json): comprobación automatizada de la aplicación Streamlit.
@@ -185,4 +185,4 @@ Las evidencias de verificación ejecutadas se localizan en [`CEFET_MG/reports/co
 8. **Anexos A, B y C vigentes:** [`CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md`](CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md)
 9. **Documentación detallada vigente:** [`CEFET_MG/docs/consolidacion_final/`](CEFET_MG/docs/consolidacion_final/) ([`definicion_problema.md`](CEFET_MG/docs/consolidacion_final/definicion_problema.md), [`modelo_y_variables.md`](CEFET_MG/docs/consolidacion_final/modelo_y_variables.md), [`rk4_calibracion_validacion.md`](CEFET_MG/docs/consolidacion_final/rk4_calibracion_validacion.md), [`protocolo_vigente.md`](CEFET_MG/docs/consolidacion_final/protocolo_vigente.md), [`escenarios_resultados_decision.md`](CEFET_MG/docs/consolidacion_final/escenarios_resultados_decision.md), [`solidez_y_limitaciones.md`](CEFET_MG/docs/consolidacion_final/solidez_y_limitaciones.md), [`registro_metodologico.md`](CEFET_MG/docs/consolidacion_final/registro_metodologico.md), [`indice_versiones.md`](CEFET_MG/docs/consolidacion_final/indice_versiones.md))
 
-La depuraci?n documental y la recuperaci?n de los antecedentes est?n explicadas en [el ?ndice de versiones](CEFET_MG/docs/consolidacion_final/indice_versiones.md). La etiqueta publicada `cefet-archivo-cientifico-completo` conserva los 44 Markdown originales.
+La depuración documental y la recuperación de los antecedentes están explicadas en [el índice de versiones](CEFET_MG/docs/consolidacion_final/indice_versiones.md). La etiqueta publicada `cefet-archivo-cientifico-completo` conserva los 44 Markdown originales.

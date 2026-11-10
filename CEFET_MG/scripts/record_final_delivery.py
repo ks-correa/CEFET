@@ -3,6 +3,9 @@ import hashlib
 import json
 from pathlib import Path
 import requests
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from src.documentary_archive import verify_original_manifest
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,7 +19,7 @@ def main():
     assert '46 passed' in tests and 'failed' not in tests
     assert 'All checks passed!' in (OUT / 'typecheck.txt').read_text(encoding='utf-16')
     manifest = read('manifest_historico.json')
-    assert all(hashlib.sha256((ROOT / p).read_bytes()).hexdigest() == sha for p, sha in manifest.items())
+    verify_original_manifest(manifest)
     assert read('browser_checks.json')['passed']
     assert all(x['status'] == 'ready' and not x['exceptions'] for x in read('agent_checks.json'))
     assert len(read('esquema_definitivo_13.json')) == 13

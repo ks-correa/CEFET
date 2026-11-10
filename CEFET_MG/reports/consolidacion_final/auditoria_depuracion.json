@@ -1,0 +1,546 @@
+{
+  "date": "2026-11-09",
+  "checkpoint": "9085b7c",
+  "historical_tag": "cefet-archivo-cientifico-completo",
+  "historical_commit": "444042936475cd204576d6488f7599993ee98636",
+  "markdown_initial": 44,
+  "markdown_final": 37,
+  "deleted": {
+    "LEEME_PRIMERO.md": "9634a7d3840de7de679990594f94bf1f2fbb1fce8c01826f7a437555b0a43299",
+    "docs/anexos_proyecto.md": "897b80a406329f767848d2c9bc60adda586af0edffc3e48ba1bd9d2e6b24cc59",
+    "docs/definicion_problema.md": "71bb71dd7084a95ba05816e897c3120930de7c25a79fce668bff113c710b20de",
+    "docs/evidencias_13_diapositivas.md": "c32e81d0155059798c0efe1bffa504c76d99174e5626961b171846d5905d5f40",
+    "docs/esquema_13_diapositivas_revisado.md": "ba10eb90dbaea2e9a4f8e688896d6f59751e1b82e8b94c760dc180693100cf2c",
+    "docs/guia_simulador.md": "67e4d0211742896600b8ff63a8d15a90a9e52a5735fc8ccc58c0493a0765331f",
+    "docs/matriz_cumplimiento_guia.md": "714d1a2bb20d289ecb039404a4d480130f11b51a1e1d1df1d47e0b860d996769"
+  },
+  "retained_markdown": {
+    "README.md": "Presentación general, ecuaciones, parámetros y ocho destinos públicos.",
+    "CEFET_MG/README.md": "Comandos vigentes de ejecución, pruebas y reproducción.",
+    "CEFET_MG/data/raw/README.md": "Documentación experimental original; conservación obligatoria.",
+    "CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md": "Anexos académicos y siete parámetros exactos; ruta pública obligatoria.",
+    "CEFET_MG/docs/consolidacion_final/definicion_problema.md": "Pregunta, alcance y condiciones de la decisión vigente.",
+    "CEFET_MG/docs/consolidacion_final/escenarios_resultados_decision.md": "Comparación vigente E0/E1/E2 y resultados nominales.",
+    "CEFET_MG/docs/consolidacion_final/esquema_definitivo_13.md": "Trece diapositivas con evidencia y fuentes verificables.",
+    "CEFET_MG/docs/consolidacion_final/indice_versiones.md": "Mapa de versiones, recuperación histórica y auditoría documental.",
+    "CEFET_MG/docs/consolidacion_final/matriz_cumplimiento.md": "Correspondencia vigente entre requisitos y evidencias.",
+    "CEFET_MG/docs/consolidacion_final/modelo_y_variables.md": "Ecuaciones exactas de U, variables y unidades.",
+    "CEFET_MG/docs/consolidacion_final/protocolo_vigente.md": "Reglas vigentes y alcance de exploraciones, posterior al diagnóstico.",
+    "CEFET_MG/docs/consolidacion_final/registro_metodologico.md": "Trazabilidad de la revisión retrospectiva de E2 y S_HIST.",
+    "CEFET_MG/docs/consolidacion_final/rk4_calibracion_validacion.md": "Especificación RK4 y evaluación predictiva interna.",
+    "CEFET_MG/docs/consolidacion_final/solidez_y_limitaciones.md": "90 sensibilidades, equilibrio local y limitaciones científicas.",
+    "CEFET_MG/docs/modelo_matematico.md": "Formulación de modelos A-D y supuestos físicos no identificados.",
+    "CEFET_MG/docs/protocolo_diagnostico_constante.md": "Diseño del diagnóstico D50 y ablación de media, no sustituido por el protocolo final.",
+    "CEFET_MG/docs/protocolo_escenarios.md": "Reglas originales y definición histórica de E2 suavizado.",
+    "CEFET_MG/docs/protocolo_optimizacion.md": "Búsqueda adaptativa, familias, cotas, protocolos y extensión a siete parámetros.",
+    "CEFET_MG/docs/protocolo_previo.md": "Diseño original de particiones, umbrales y comparación A-D.",
+    "CEFET_MG/docs/registro_decisiones.md": "Incidencias y corrección de deduplicación de escalas de entrenamiento.",
+    "CEFET_MG/reports/auditoria_dataset.md": "Auditoría cuantitativa, segmentación y discrepancias experimentales.",
+    "CEFET_MG/reports/bondad_ajuste.md": "Métricas, residuos, extrapolación y robustez de la línea base.",
+    "CEFET_MG/reports/consolidacion_final/informe_cumplimiento.md": "Registro de cumplimiento previo con alcance y evidencias de fase 4.",
+    "CEFET_MG/reports/consolidacion_final/informe_final.md": "Informe de entrega científica; ruta pública obligatoria.",
+    "CEFET_MG/reports/diagnostico_control_constante/informe_diagnostico.md": "Diagnóstico D50 y ablación de media que motivaron E2.",
+    "CEFET_MG/reports/optimizacion_precision/README.md": "Secuencia reproducible de optimización y alcance exacto de la repetición.",
+    "CEFET_MG/reports/optimizacion_precision/bondad_ajuste_optimizada.md": "Métricas, sesgos y residuos de todos los candidatos.",
+    "CEFET_MG/reports/optimizacion_precision/calibracion_optimizada.md": "Configuración, escalas, cotas y diagnósticos de ajustes originales.",
+    "CEFET_MG/reports/optimizacion_precision/diagnostico_modelos.md": "Diagnóstico C/D y ablación del retardo/actuador.",
+    "CEFET_MG/reports/optimizacion_precision/hipotesis_investigadas.md": "Hipótesis físicas de las familias y fuentes primarias.",
+    "CEFET_MG/reports/optimizacion_precision/modelo_recomendado.md": "Compromiso histórico entre P y U y recomendación multiobjetivo.",
+    "CEFET_MG/reports/optimizacion_precision/modelos_candidatos.md": "Formulación algebraica de familias, equivalencias y actuador.",
+    "CEFET_MG/reports/optimizacion_precision/sensibilidad_parametros.md": "Identificabilidad, Jacobiano relativo y perfiles de coste.",
+    "CEFET_MG/reports/optimizacion_precision/validacion_comparativa.md": "Comparación completa de evaluación, CV, arranque y extrapolación.",
+    "CEFET_MG/reports/simulador/control_entrega.md": "Registro histórico de aceptación de fase 3 y sus evidencias.",
+    "CEFET_MG/reports/simulador/resultados_y_decision.md": "19 decisiones originales y compensaciones entre atenuación y suavizado.",
+    "CEFET_MG/reports/viabilidad.md": "Dictamen limitado de la línea base y condiciones que fallan."
+  },
+  "unchanged_checkpoint_files": 881,
+  "scientific_hashes_checked": 849,
+  "scientific_baseline": "9085b7c:CEFET_MG/reports/consolidacion_final/integridad_vigente.json (all non-documentary entries)",
+  "scientific_hash_discrepancies": [],
+  "original_manifests_unchanged": [
+    "reports/consolidacion_final/manifest_historico.json",
+    "reports/optimizacion_precision/original_manifest.json",
+    "reports/diagnostico_control_constante/manifest_previo.json",
+    "reports/simulador/integridad.json",
+    "data/processed/sha256.json"
+  ],
+  "internal_markdown_links": [
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "app_final.py",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "data/raw/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "data/raw/README.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "data/processed/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/anexos_A_B_C.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/modelo_y_variables.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/protocolo_vigente.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/escenarios_resultados_decision.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/solidez_y_limitaciones.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "docs/consolidacion_final/indice_versiones.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "reports/consolidacion_final/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "reports/consolidacion_final/informe_final.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "reports/consolidacion_final/informe_cumplimiento.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/README.md",
+      "target": "reports/optimizacion_precision/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../app_final.py",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../iniciar_entrega_final.ps1",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../src/simulation_engine.py",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../src/final_scenarios.py",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": ".",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../reports/consolidacion_final/",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../reports/optimizacion_precision/README.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "registro_metodologico.md",
+      "exists": true
+    },
+    {
+      "document": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "target": "../../reports/consolidacion_final/auditoria_depuracion.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/raw/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/raw/complete_data.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/processed/run_01.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/processed/run_10.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/src/precision_models.py",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/parametros_U_vigentes.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/src/final_scenarios.py",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/protocolo_vigente.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/validacion_U_sin_cambios.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/comparacion_principal.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/tests.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/typecheck.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/integridad.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/manifest_historico.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/browser_checks.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/agent_checks.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/raw/README.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/data/raw/complete_data.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/reports/consolidacion_final/informe_final.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/definicion_problema.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/modelo_y_variables.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/rk4_calibracion_validacion.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/protocolo_vigente.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/escenarios_resultados_decision.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/solidez_y_limitaciones.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/registro_metodologico.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "CEFET_MG/docs/consolidacion_final/indice_versiones.md",
+      "exists": true
+    }
+  ],
+  "broken_internal_links": [],
+  "public_destinations": [
+    {
+      "url": "https://zenodo.org/records/19856119",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/19856119"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/data/raw/README.md",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/data/raw/README.md"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/referencias/Guia_Proyecto_Simulacion_Tanques_Parejas.docx"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html",
+      "status": 200,
+      "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/data/raw/complete_data.csv",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/data/raw/complete_data.csv"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/reports/consolidacion_final/informe_final.md",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/reports/consolidacion_final/informe_final.md"
+    },
+    {
+      "url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md",
+      "status": 200,
+      "final_url": "https://github.com/ks-correa/CEFET/blob/main/CEFET_MG/docs/consolidacion_final/anexos_A_B_C.md"
+    }
+  ],
+  "slide_13_sources_unchanged": true,
+  "pptx_scope": "No PPTX versionado; destinos contrastados con primeras ocho referencias del README histórico y metadatos de diapositiva 13.",
+  "streamlit": {
+    "health": "ok",
+    "checks": [
+      {
+        "state": null,
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Proyecto"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Sistema hidrÃ¡ulico"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Modelo matemÃ¡tico"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Resultados experimentales"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Escenarios"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "AnÃ¡lisis complementarios"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "ValidaciÃ³n y ajuste"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "DecisiÃ³n"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Fuentes y reproducciÃ³n"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "section": "Sistema hidrÃ¡ulico"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": null,
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "scenario": "E0 Â· Referencia experimental"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": null,
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "scenario": "E1 Â· AtenuaciÃ³n alrededor de 50%"
+        },
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": null,
+        "status": "ready",
+        "exceptions": []
+      },
+      {
+        "state": {
+          "scenario": "E2 Â· OperaciÃ³n constante al 50%"
+        },
+        "status": "ready",
+        "exceptions": []
+      }
+    ]
+  },
+  "documentary_generators_dry_run": [
+    {
+      "generator": "src.reporting",
+      "captured_writes": 10,
+      "recreated_deleted_markdown": []
+    },
+    {
+      "generator": "src.simulator_documentation",
+      "captured_writes": 5,
+      "recreated_deleted_markdown": []
+    },
+    {
+      "generator": "src.constant_control_reporting",
+      "captured_writes": 4,
+      "recreated_deleted_markdown": []
+    },
+    {
+      "generator": "src.final_documentation",
+      "captured_writes": 13,
+      "recreated_deleted_markdown": []
+    }
+  ],
+  "pytest": {
+    "command": "python -m pytest -q tests",
+    "interpreter": ".venv/Scripts/python.exe",
+    "passed": 48,
+    "failed": 0,
+    "duration_seconds": 6.24
+  },
+  "integrity_test_scope": "Todas las entradas de los manifiestos originales: ciencia del checkout; rutas documentales enumeradas de la etiqueta. Integridad vigente de todos los archivos versionados salvo el propio manifiesto; etiqueta fijada al commit original; prueba negativa de datos ausentes/alterados.",
+  "historical_markdown_verified": 44
+}

@@ -6,6 +6,7 @@ from .data_processing import ROOT
 from .final_consolidation import OUT
 from .reporting import table
 from .simulation_engine import calibrated_config
+from .documentary_archive import historical_source
 
 DOC=ROOT/'docs/consolidacion_final'
 QUESTION='¿Cómo influye la variabilidad de la señal de bombeo en la estabilidad de los niveles de dos tanques hidráulicos interconectados y qué condición de operación permite minimizar sus desviaciones respecto al equilibrio nominal?'
@@ -339,6 +340,7 @@ E1/E2 son contrafactuales. E2 gana nominalmente en 19 comparaciones; no es prueb
     start=next(i for i,x in enumerate(paras) if x.startswith('3. '));end=next(i for i,x in enumerate(paras) if x.startswith('4. '));section=paras[start:end]
     for slide in slides:
         assert section[section.index(str(slide['n']))+1]==slide['title']
+        slide['source'] = [historical_source(path) for path in slide['source']]
         for path in slide['source']:
             if not path.startswith('http') and not (ROOT/path).exists():raise FileNotFoundError(path)
     write(OUT/'esquema_definitivo_13.json',json.dumps(slides,indent=2,ensure_ascii=False))
